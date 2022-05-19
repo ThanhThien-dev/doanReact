@@ -1,18 +1,14 @@
 /* HEADER */
-.header-container {
-  width: 100%;
-  z-index: 30;
-  position: relative;
-  background-size: cover;
-  background-position: 50% 0;
-  transition: background-color .3s, opacity .3s;
-  align-items: center;
+.wrapper {
+  height: 100px;
+display: flex;
+justify-content: center;
 }
 
 .header-top {
-  z-index: 10;
-  position: relative;
-  height: 90px;
+  height: 100%;
+  width: 1150px;
+  background-color: #000;
 }
 
 .header-top-inside {
