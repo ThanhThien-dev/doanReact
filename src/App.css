@@ -1,31 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* HEADER */
 .wrapper {
-  height: 100px;
-display: flex;
-justify-content: center;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
 }
 
-.header-top {
-  height: 100%;
-  width: 1150px;
-  background-color: #000;
-}
-
-.header-top-inside {
+.header-white {
+  width: 100%;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1217px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .header-logo {
-  height: 90px;
-  width: 200px;
-  max-height: 90px;
-  padding: 10px 0;
+  padding-left: 50px;
+}
+
+.search{
+  width: 361px;
+  height: 46px;
+  padding: 0px 16px;
+  background-color: rgba(22, 24, 35, 0.06);
+  border-radius: 92px;
+  display: flex;
+}
+
+.input-search{
+  flex: 1;
+  padding: 12px 0;
+  color: black;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-btn{
+
+}
+
+
+
+.header-black{
+  background-color: black;
 }
 
 /* TIẾP THEO */
