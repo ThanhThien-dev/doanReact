@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css';
 
 function Header() {
     return (
@@ -16,10 +18,14 @@ function Header() {
                 {/* SEARCH */}
                 <div className="search">
                     <input className="input-search" placeholder="Tìm kiếm" />
+
                     <span class="search-span"></span>
+
+                    <tippy>
                     <button className="search-btn">
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </button>
+                    </tippy>
                 </div>
 
                 <div className="action">
