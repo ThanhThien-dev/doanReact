@@ -35,9 +35,13 @@
   padding-left: 50px;
 }
 
+.search,
+.search-result {
+  width: 500px;
+}
+
 .search {
   position: relative;
-  width: 500px;
   height: 60px;
   padding-left: 16px;
   background-color: rgba(22, 24, 35, 0.06);
@@ -95,6 +99,51 @@
 .search-btn:active {
   background: rgba(22, 24, 35, 0.06);
 }
+
+.wrapper-search {
+  width: 100%;
+  max-height: min((100vh - 96px) - 60px, 734px);
+  min-height: 100px;
+  padding-top: 8px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+}
+
+/* AccountItem */
+.wrapper-account{
+  display: flex;
+  align-items: center;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+
+.wrapper-account:hover{
+  background: rgba(22, 24, 35, 0.03);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 14px;
+  color: rgba(22, 24, 35, 0.5);
+}
+
 
 .header-black {
   width: 100%;

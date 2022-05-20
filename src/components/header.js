@@ -3,14 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import AccountItem from "./data/accountItem";
 
 function Header() {
     const [searchResult, setSearchResult] = useState([]);
 
     useEffect(() => {
         setTimeout(() => {
-            setSearchResult([1,2,3])
-        }, 3000)
+            setSearchResult([])
+        }, 0);
     }, [])
 
     return (
@@ -26,11 +27,20 @@ function Header() {
 
                     {/* SEARCH */}
                     <Tippy
-                    interactive
+                        interactive
                         visible={searchResult.length > 0}
                         render={(attrs) => (
                             <div className="search-result" tabIndex='-1' {...attrs}>
-                                Ket qua
+                                <div className="wrapper-search">
+                                    <h4 className="search-tittle">
+                                        Accounts
+                                    </h4>
+                                    <AccountItem />
+                                    <AccountItem />
+                                    <AccountItem />
+                                    <AccountItem />
+                                    <AccountItem />
+                                </div>
                             </div>
                         )}
                     >
@@ -54,6 +64,7 @@ function Header() {
                 {/* HEADER-MENU */}
                 <div className="header-black">
                     <div className="black-bg">
+
 
                     </div>
                 </div>
