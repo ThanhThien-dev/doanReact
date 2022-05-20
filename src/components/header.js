@@ -21,11 +21,11 @@ function Header() {
 
                     <span class="search-span"></span>
 
-                    <tippy>
+                    <Tippy>
                     <button className="search-btn">
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </button>
-                    </tippy>
+                    </Tippy>
                 </div>
 
                 <div className="action">
