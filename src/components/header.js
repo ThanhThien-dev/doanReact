@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faBagShopping, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import AccountItem from "./data/accountItem";
@@ -15,7 +15,6 @@ function Header() {
     }, [])
 
     return (
-
         < header className="container" >
             <div className="wrapper">
 
@@ -48,7 +47,7 @@ function Header() {
                         <div className="search">
                             <input className="input-search" placeholder="Tìm kiếm" />
 
-                            <span class="search-span"></span>
+                            <span className="search-span"></span>
 
                             <button className="search-btn">
                                 <FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -56,18 +55,35 @@ function Header() {
                         </div>
                     </Tippy>
 
-                    <div className="action">
+                    {/* GIỎ HÀNG */}
+                    <div className="login">
+
+                        <div className="giohang">
+                            <span className="sl">SL: 0</span>
+                            <FontAwesomeIcon className="giohang-icon" icon={faBagShopping} />
+                        </div>
+
+                        <div className="action">
+                            <button className="btn-login">Đăng nhập</button>
+                        </div>
 
                     </div>
                 </div>
 
                 {/* HEADER-MENU */}
                 <div className="header-black">
-                    <div className="black-bg">
-
+                    <div className="black-wrapper">
+                        <ul className="black-content">
+                            <li className="black-li">TRANG CHỦ</li>
+                            <li className="black-li">SẢN PHẨM HOT</li>
+                            <li className="black-li">BLOG</li>
+                            <li className="black-li">LIÊN HỆ</li>
+                            <li className="black-li">GIỚI THIỆU</li>
+                        </ul>
 
                     </div>
                 </div>
+
             </div>
         </header >
     );
