@@ -1,35 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* HEADER */
-.header-container {
+
+.container {
+  display: flex;
+  justify-content: center;
   width: 100%;
   z-index: 30;
   position: relative;
   background-size: cover;
   background-position: 50% 0;
   transition: background-color .3s, opacity .3s;
-  align-items: center;
 }
 
-.header-top {
-  z-index: 10;
-  position: relative;
-  height: 90px;
+.wrapper {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
 }
 
-.header-top-inside {
+.header-white {
+  width: 100%;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-logo {
+  padding-left: 50px;
+}
+
+.search,
+.search-result {
+  width: 450px;
+}
+
+.search {
+  position: relative;
+  height: 50px;
+  padding-left: 16px;
+  background-color: rgba(22, 24, 35, 0.06);
+  border-radius: 92px;
+  display: flex;
+  border: 1.5px solid transparent;
+}
+
+.search::after {
+  position: absolute;
+  top: 9px;
+  right: 60px;
+  height: 28px;
+  width: 1px;
+  background-color: rgba(22, 24, 35, 0.12);
+}
+
+.search:focus-within {
+  border-color: rgba(22, 24, 35, 0.2);
+}
+
+.input-search {
+  flex: 1;
+  padding: 12px 0;
+  color: black;
+  font-size: 22px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-span {
+  width: 1px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 60px;
+  background: rgba(22, 24, 35, 0.12);
+}
+
+.search-btn {
+  width: 60px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background: rgba(22, 24, 35, 0.03);
+}
+
+.search-btn:active {
+  background: rgba(22, 24, 35, 0.06);
+}
+
+.wrapper-search {
   width: 100%;
-  max-width: 1217px;
+  max-height: min((100vh - 96px) - 60px, 734px);
+  min-height: 100px;
+  padding-top: 8px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+}
+
+/* AccountItem */
+.wrapper-account {
+  display: flex;
+  align-items: center;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+
+.wrapper-account:hover {
+  background: rgba(22, 24, 35, 0.03);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 14px;
+  color: rgba(22, 24, 35, 0.5);
+}
+
+/* rightElement */
+/* .action {
+  min-width: 100px;
+  outline: none;
+} */
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.sl {
+  font-size: 18px;
+  padding-right: 10px;
+  font-weight: 700;
+}
+
+.giohang {
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+.giohang-icon:hover {
+  cursor: pointer;
+}
+
+.btn-login {
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 100px;
+  padding: 7px 16px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  margin-right: 50px;
+}
+
+.btn-login:hover {
+  cursor: pointer;
+  background: brown;
+}
+
+.current-user{
+  font-size: 20px;
+}
+
+.userName{
+  color: red;
+}
+
+/* header-black */
+.header-black {
+  /* width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between; */
+  background-color: #0a0a0a;
+
+  min-height: 75px;
+  z-index: 9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.black-wrapper {
+  height: 100%;
+  display: flex;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.header-logo {
-  height: 90px;
-  width: 200px;
-  max-height: 90px;
-  padding: 10px 0;
+.black-content {
+  display: flex;
+  align-items: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
-/* TIẾP THEO */
+.black-li {
+  color: white;
+  font-size: 18px;
+  list-style: none;
+  padding: 0 60px;
+  margin: 0 7px;
+}
+
+.black-li:hover {
+  cursor: pointer;
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* BODY */
+
+/* FOOTER */
