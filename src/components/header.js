@@ -14,6 +14,8 @@ function Header() {
         }, 0);
     }, [])
 
+    const currentUser = false;
+
     return (
         < header className="container" >
             <div className="wrapper">
@@ -63,9 +65,18 @@ function Header() {
                             <FontAwesomeIcon className="giohang-icon" icon={faBagShopping} />
                         </div>
 
+                        {currentUser ? (
+                            <div className="current-user">
+                                <span>Xin chào, </span>
+                                <span className="userName">userName</span>
+                            </div>
+                        ) : (
+
                         <div className="action">
                             <button className="btn-login">Đăng nhập</button>
                         </div>
+
+                        )}
 
                     </div>
                 </div>
