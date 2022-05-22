@@ -21,7 +21,7 @@ function Header() {
                 {/* HEADER-LOGO */}
                 <div className="header-white">
                     <div className="header-logo">
-                        <img src={require("./img/logo.png")} className="logo" alt="logo" width="150" height="80" />
+                        <img src={require("./img/logo.png")} className="logo" alt="logo" width="150" height="150" />
                     </div>
 
                     {/* SEARCH */}
