@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.page-container {
+/* .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -12,7 +12,7 @@
 
 .container-wrap {
   flex: 1;
-}
+} */
 
 /* HEADER */
 
@@ -257,9 +257,34 @@
 
 /* BODY */
 
+
+
+.icon-copyRight {
+  width: 20px;
+  height: 20px;
+}
+
+
 /* FOOTER */
-.main-footer {
-  padding-top: 3em;
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.bg-footer {
   position: relative;
   width: 100%;
   display: flex;
@@ -274,38 +299,223 @@
   height: 100%;
   right: 0;
   bottom: 0;
-  padding: 0;
   margin: 0;
   overflow: hidden;
   box-sizing: border-box;
-  color: #777;
   font-size: 18px;
 }
 
-.container-footer {
-  height: 300px;
-  
+  {
+  /* VỀ CHÚNG TÔI */
 }
 
-.row {
+footer .container .noi-dung {
+  margin-right: 30px;
+}
+
+footer .container .noi-dung.about {
+  width: 40%;
+}
+
+footer .container .noi-dung.about h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .container .noi-dung.about h2:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+
+footer .container .noi-dung.about p {
+  color: #999;
+  word-spacing: 5px;
+  line-height: 1.5;
+}
+
+.social-icon {
+  margin-top: 20px;
   display: flex;
+  font-size: 50px;
+  color: #fff;
+  list-style: none;
 }
 
-.col {
+.social-icon li {
+  width: 43.75px;
+  height: 43.75px;
+  display: inline-block;
+  display: flex;
+  margin-right: 10px;
 }
 
-.list {
-  
+.social-icon li:hover {
+  cursor: pointer;
+  background: #f00;
 }
 
-.col-sm {
-  color: aliceblue;
-  text-align: center;
+  {
+  /* LINK */
 }
 
+.links h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
 
+.links h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
 
-.icon-copyRight {
-  width: 20px;
-  height: 20px;
+.links {
+  position: relative;
+  width: 25%;
+  padding-left: 150px;
+}
+
+.links ul li {
+  list-style: none;
+}
+
+.links ul li a {
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.links ul li a:hover {
+  color: rgb(229, 255, 0);
+  text-decoration: underline;
+}
+
+/* LIÊN HỆ */
+.contact h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.contact h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+
+.contact {
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+  padding-left: 100px;
+}
+
+.contact .info {
+  position: relative;
+}
+
+.contact .info li {
+  display: flex;
+  margin-bottom: 16px;
+  color: #999;
+}
+
+.contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact .info li span {
+  color: #999;
+}
+
+.contact .info li a {
+  color: #999;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin-top: 16px;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #222;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  padding: 8px 24px;
+}
+
+.btn--primary:hover {
+  background: #f00;
+}
+
+.btn--primary:active {
+  background: #f00;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+.form__field {
+  width: 90%;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  border: 0;
+  outline: 0;
+  padding: 8px 4px;
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px;
+
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .container .noi-dung {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  footer .container,
+  .noi-dung.about,
+  .links,
+  .contact {
+    width: 100%;
+  }
+
+  /* /FOOTER */
 }
