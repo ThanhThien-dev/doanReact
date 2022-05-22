@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-wrap {
+  flex: 1;
+}
+
 /* HEADER */
 
 .container {
@@ -190,11 +200,11 @@
   background: brown;
 }
 
-.current-user{
+.current-user {
   font-size: 20px;
 }
 
-.userName{
+.userName {
   color: red;
 }
 
@@ -248,3 +258,54 @@
 /* BODY */
 
 /* FOOTER */
+.main-footer {
+  padding-top: 3em;
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  background-image: url("http://mauweb.monamedia.net/rolex/wp-content/uploads/2018/12/slider1.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #777;
+  font-size: 18px;
+}
+
+.container-footer {
+  height: 300px;
+  
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+}
+
+.list {
+  
+}
+
+.col-sm {
+  color: aliceblue;
+  text-align: center;
+}
+
+
+
+.icon-copyRight {
+  width: 20px;
+  height: 20px;
+}
