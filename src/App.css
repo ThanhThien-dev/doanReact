@@ -254,10 +254,6 @@
 
 
 
-.icon-copyRight {
-  width: 20px;
-  height: 20px;
-}
 
 /* FOOTER */
 footer {
@@ -299,10 +295,7 @@ footer .container {
   font-size: 18px;
 }
 
-  {
   /* VỀ CHÚNG TÔI */
-}
-
 footer .container .noi-dung {
   margin-right: 30px;
 }
@@ -355,10 +348,7 @@ footer .container .noi-dung.about p {
   background: #f00;
 }
 
-  {
   /* LINK */
-}
-
 .links h2 {
   position: relative;
   color: #fff;
@@ -489,7 +479,7 @@ footer .container .noi-dung.about p {
 }
 
 /* COPYRIGHT */
-.copyRight p{
+.copyRight p {
   font-size: 20px;
   color: white;
   text-align: center;

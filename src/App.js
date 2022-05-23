@@ -2,7 +2,6 @@ import './App.css';
 import Header from './components/header';
 import Body from './components/body';
 import Footer from './components/footer';
-import Test from './components/test';
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
         <Header />
         <Body />
       </div>
-      <Test />
+      <Footer />
     </div>
   );
 }
