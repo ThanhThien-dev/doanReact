@@ -210,12 +210,7 @@
 
 /* header-black */
 .header-black {
-  /* width: 100%;
-  height: 80px;
-  align-items: center;
-  justify-content: space-between; */
   background-color: #0a0a0a;
-
   min-height: 75px;
   z-index: 9;
   position: relative;
@@ -263,7 +258,6 @@
   width: 20px;
   height: 20px;
 }
-
 
 /* FOOTER */
 footer {
@@ -335,7 +329,7 @@ footer .container .noi-dung.about h2:before {
 }
 
 footer .container .noi-dung.about p {
-  color: #999;
+  color: yellow;
   word-spacing: 5px;
   line-height: 1.5;
 }
@@ -393,14 +387,14 @@ footer .container .noi-dung.about p {
 }
 
 .links ul li a {
-  color: #999;
+  color: yellow;
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
 }
 
 .links ul li a:hover {
-  color: rgb(229, 255, 0);
+  color: #f00;
   text-decoration: underline;
 }
 
@@ -435,7 +429,7 @@ footer .container .noi-dung.about p {
 .contact .info li {
   display: flex;
   margin-bottom: 16px;
-  color: #999;
+  color: yellow;
 }
 
 .contact .info li span:nth-child(1) {
@@ -445,11 +439,11 @@ footer .container .noi-dung.about p {
 }
 
 .contact .info li span {
-  color: #999;
+  color: yellow;
 }
 
 .contact .info li a {
-  color: #999;
+  color: yellow;
   text-decoration: none;
 }
 
@@ -467,8 +461,8 @@ footer .container .noi-dung.about p {
 }
 
 .btn--primary {
-  background: #222;
-  color: #fff;
+  background: blue;
+  color: rgb(255, 255, 255);
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
   border-radius: 2px;
   padding: 8px 24px;
@@ -492,6 +486,20 @@ footer .container .noi-dung.about p {
   border: 0;
   outline: 0;
   padding: 8px 4px;
+}
+
+/* COPYRIGHT */
+.copyRight p{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  width: 1378.75px;
+  padding-top: 50px;
+}
+
+.icon-copyRight {
+  width: 60px;
+  height: 30px;
 }
 
 /* RESPONSIVE FOOTER */

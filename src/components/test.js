@@ -66,6 +66,19 @@ function Test() {
                         </li>
                     </ul>
                 </div>
+
+
+
+            </div>
+
+            <div className="copyRight">
+                <p className="col-sm">
+                    <hr/>
+                    <br/>
+                    &copy; Bản quyền thuộc về đội ngũ thiết kế website
+                    <img className="icon-copyRight" src={require("./img/copyRight.png")} alt="copyRight" />
+                    TP Company!
+                </p>
             </div>
         </footer>
     )
