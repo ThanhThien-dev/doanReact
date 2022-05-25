@@ -29,11 +29,11 @@ function Footer() {
                 <div className="noi-dung links">
                     <h2>Đường Dẫn</h2>
                     <ul>
-                        <li><a href="#">Trang Chủ</a></li>
-                        <li><a href="#">Về Chúng Tôi</a></li>
-                        <li><a href="#">Thông Tin Liên Lạc</a></li>
-                        <li><a href="#">Dịch Vụ</a></li>
-                        <li><a href="#">Điều Kiện Chính Sách</a></li>
+                        <li>Trang Chủ</li>
+                        <li>Về Chúng Tôi</li>
+                        <li>Thông Tin Liên Lạc</li>
+                        <li>Dịch Vụ</li>
+                        <li>Điều Kiện Chính Sách</li>
                     </ul>
                 </div>
 
@@ -71,7 +71,7 @@ function Footer() {
                 {/* COPYRIGHT */}
                 <div className="copyRight">
                     <p className="col-sm">
-                        <hr />
+                        {/* <hr /> */}
                         <br />
                         &copy; Bản quyền thuộc về đội ngũ thiết kế website
                         <img className="icon-copyRight" src={require("./img/copyRight.png")} alt="copyRight" />

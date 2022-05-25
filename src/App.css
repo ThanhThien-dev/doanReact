@@ -374,18 +374,15 @@ footer .container .noi-dung.about p {
 
 .links ul li {
   list-style: none;
-}
-
-.links ul li a {
   color: yellow;
-  text-decoration: none;
   margin-bottom: 10px;
-  display: inline-block;
 }
 
-.links ul li a:hover {
+
+.links ul li:hover {
   color: #f00;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* LIÊN HỆ */
