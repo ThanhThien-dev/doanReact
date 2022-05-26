@@ -538,7 +538,7 @@
   
   .promotion-content {
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white);
@@ -562,7 +562,8 @@
   }
   
   .promotion-content a:hover {
-    color: var(--primary);
+    color: yellow;
+    text-decoration: underline;
   }
   
   .promotion-item:hover .promotion-content h3 {
@@ -794,7 +795,8 @@
   }
   
   .advert-layout .content a:hover {
-    color: var(--primary);
+    color: red;
+    
   }
   
   .advert-layout .item::after {
@@ -816,7 +818,8 @@
   }
   
   .advert-layout .item:hover .content a {
-    color: var(--white);
+    color: yellow;
+    text-decoration: underline;
   }
   
   .advert-layout .item:hover img {

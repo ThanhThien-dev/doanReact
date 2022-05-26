@@ -86,7 +86,7 @@ function Header() {
                     <div className="black-wrapper">
                         <ul className="black-content">
                             <li className="black-li">TRANG CHỦ</li>
-                            <li className="black-li">SẢN PHẨM HOT</li>
+                            <li className="black-li">SẢN PHẨM</li>
                             <li className="black-li">BLOG</li>
                             <li className="black-li">LIÊN HỆ</li>
                             <li className="black-li">GIỚI THIỆU</li>
