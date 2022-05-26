@@ -1,53 +1,86 @@
-import React from "react";
+import { faFacebookSquare, faInstagramSquare, faTwitterSquare, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
     return (
-        <footer>
-            <div className="container-footer">
-                {/* LOGO
-                <div className="footer-logo">
-                    <img src={require("./img/logo.png")} alt="logo" />
-                </div> */}
+        <footer className="bg-footer">
+            <div className="container">
 
-                {/* COL1 */}
-                <div className="lienhe">
-                    <h2>LIÊN HỆ</h2>
-                    <ul className="list">
-                        <li>Khu phố 6, Phường Linh Trung, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</li>
-                        <li>Hotline: (028) 3725.2002</li>
-                        <li>Email: info@uit.edu.vn</li>
+                {/* VỀ CHÚNG TÔI */}
+                <div className="noi-dung about">
+                    <h2>Về Chúng Tôi</h2>
+                    <p> TP TIMMERMAN đã tồn tại và phát triển đến ngày nay và đang dần vươn lên trở thành 1 trong
+                        những chuỗi bán lẻ đồng hồ hàng đầu ở Việt Nam. Cùng với tiêu chí luôn đề cao những
+                        giá trị cao nhất cho khách hàng, TP TIMMERMAN không chỉ mang đến những phiên bản đồng hồ chính hãng
+                        với chất lượng tốt nhất, mà còn mang lại sự an tâm, tin cậy dành cho Quý khách hàng. Chúng tôi
+                        không kinh doanh đồng hồ đơn thuần mà chúng tôi chia sẻ niềm đam mê và sáng tạo.
+                        TP TIMMERMAN sẽ là cầu nối của cộng đồng yêu thích đồng hồ – nơi mà có thể mọi thành viên
+                        có thể kết nối, gắn kết cùng 1 tình yêu – đó là đồng hồ.</p>
+                    <ul className="social-icon">
+                        <li><FontAwesomeIcon icon={faFacebookSquare} /></li>
+                        <li><FontAwesomeIcon icon={faTwitterSquare} /></li>
+                        <li><FontAwesomeIcon icon={faInstagramSquare} /></li>
+                        <li><FontAwesomeIcon icon={faYoutubeSquare} /></li>
                     </ul>
                 </div>
 
-                {/* COL2 */}
-                <div className="follow">
-                    <h2>FOLLOW US</h2>
-                    <ul className="list">
-                        <li>Follow để không bỏ lỡ bất kì ưu đãi nào từ chúng tôi</li>
-                        <li>ICON</li>
+                {/* LINK */}
+                <div className="noi-dung links">
+                    <h2>Đường Dẫn</h2>
+                    <ul>
+                        <li>Trang Chủ</li>
+                        <li>Về Chúng Tôi</li>
+                        <li>Thông Tin Liên Lạc</li>
+                        <li>Dịch Vụ</li>
+                        <li>Điều Kiện Chính Sách</li>
                     </ul>
                 </div>
 
-                {/* COL3 */}
-                <div className="dangky">
-                    <h2>ĐĂNG KÝ</h2>
-                    <ul className="list">
-                        <li>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</li>
-                        <li>TextBox Email</li>
+                {/* CONTACT */}
+                <div className="noi-dung contact">
+                    <h2>Thông Tin Liên Hệ</h2>
+                    <ul className="info">
+                        <li>
+                            <span><FontAwesomeIcon icon={faLocationDot} /></span>
+                            <span>Phường Linh Trung<br />
+                                TP.Thủ Đức, TP.Hồ Chí Minh<br />
+                                Việt Nam</span>
+                        </li>
+                        <li>
+                            <span><FontAwesomeIcon icon={faPhone} /></span>
+                            <p>Hotline: (028) 3725.2002
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                0967.247.555.
+                            </p>
+                        </li>
+                        <li>
+                            <span><FontAwesomeIcon icon={faEnvelope} /></span>
+                            <p>Email: info@uit.edu.vn</p>
+                        </li>
+                        <li>
+                            <form className="form">
+                                <input type="email" className="form__field" placeholder="Đăng Ký Subscribe Email" />
+                                <button type="button" className="btn btn--primary  uppercase">Gửi</button>
+                            </form>
+                        </li>
                     </ul>
+                </div>
+
+                {/* COPYRIGHT */}
+                <div className="copyRight">
+                    <p className="col-sm">
+                        {/* <hr /> */}
+                        <br />
+                        &copy; Bản quyền thuộc về đội ngũ thiết kế website
+                        <img className="icon-copyRight" src={require("./img/copyRight.png")} alt="copyRight" />
+                        &nbsp;TP Company!
+                    </p>
                 </div>
 
             </div>
-            {/* <hr />
-            <div className="row">
-                <p className="col-sm">
-                    &copy; Bản quyền thuộc về Thiết kế website
-                    <img className="icon-copyRight" src={require("./img/copyRight.png")} alt="copyRight" />
-                    TP Company!
-                </p>
-            </div> */}
         </footer>
     )
 }
-
 export default Footer;
