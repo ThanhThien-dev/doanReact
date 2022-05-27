@@ -10,8 +10,8 @@ function Footer() {
                 {/* VỀ CHÚNG TÔI */}
                 <div className="noi-dung about">
                     <h2>Về Chúng Tôi</h2>
-                    <p> TP TIMMERMAN đã tồn tại và phát triển đến ngày nay và đang dần vươn lên trở thành 1 trong
-                        những chuỗi bán lẻ đồng hồ hàng đầu ở Việt Nam. Cùng với tiêu chí luôn đề cao những
+                    <p> TP TIMMERMAN đã tồn tại và phát triển đến ngày nay và dần vươn lên trở thành 1 trong
+                        những chuỗi bán lẻ đồng hồ hàng đầu ở Việt Nam. Với tiêu chí luôn đề cao những
                         giá trị cao nhất cho khách hàng, TP TIMMERMAN không chỉ mang đến những phiên bản đồng hồ chính hãng
                         với chất lượng tốt nhất, mà còn mang lại sự an tâm, tin cậy dành cho Quý khách hàng. Chúng tôi
                         không kinh doanh đồng hồ đơn thuần mà chúng tôi chia sẻ niềm đam mê và sáng tạo.
@@ -44,15 +44,15 @@ function Footer() {
                         <li>
                             <span><FontAwesomeIcon icon={faLocationDot} /></span>
                             <span>Phường Linh Trung<br />
-                                TP.Thủ Đức, TP.Hồ Chí Minh<br />
-                                Việt Nam</span>
+                                TP.Thủ Đức<br />
+                                TP.Hồ Chí Minh</span>
                         </li>
                         <li>
                             <span><FontAwesomeIcon icon={faPhone} /></span>
                             <p>Hotline: (028) 3725.2002
                                 <br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                0967.247.555.
+                                0967.247.555
                             </p>
                         </li>
                         <li>

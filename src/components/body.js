@@ -10,8 +10,11 @@ import { faHeart, faSearch, faShoppingCart, faSlidersH } from "@fortawesome/free
 function Body() {
     return (
         <body>
-            <section className="section promotion">
 
+            <img src={require("./images/banner.jpg")} alt="" width={1686} />
+
+            <section className="section promotion">
+                
                 {/* DANH MỤC SẢN PHẨM */}
                 <div className="title">
                     <h2>THƯƠNG HIỆU NỔI TIẾNG</h2>
@@ -73,13 +76,13 @@ function Body() {
             <section className="section products">
                 <div className="title">
                     <h2>SẢN PHẨM HOT</h2>
-                    <span>Matching style and className with luxury and comfort</span>
+                    <span>Matching style and class with luxury and comfort</span>
                 </div>
 
                 <div className="product-layout">
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/home.jpg")} alt="" />
+                            <img src={require("./images/hot/1.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -91,16 +94,16 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="Chi tiết sản phẩm.html">Victorinox Suit</a>
+                            <a href="Chi tiết sản phẩm.html">Casio EFV-550L-1AVUDF – Nam – Quartz (Pin) – Dây Da</a>
                             <div className="price">
-                                <span>$1500</span>
+                                <span>3.529.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd2.jpeg")} alt="" />
+                            <img src={require("./images/hot/2.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -112,17 +115,17 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">LV Men Casual</a>
+                            <a href="">Casio EFR-S567D-1AVUDF – Nam – Kính Sapphire – Quartz (Pin) – Dây Kim Loại</a>
                             <div className="price">
-                                <span>$1049</span>
-                                <span className="cancel">$1050</span>
+                                <span>5.182.000 ₫</span>
+                                <span className="cancel">5.982.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd3.jpg")} alt="" />
+                            <img src={require("./images/hot/3.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -134,16 +137,16 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Chelsea boots</a>
+                            <a href="">Casio AQ-S810W-1A4VDF – Nam – Kính Nhựa – Tough Solar – Dây Cao Su</a>
                             <div className="price">
-                                <span>$900</span>
+                                <span>3.356.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd4.jpg")} alt="" />
+                            <img src={require("./images/hot/4.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -155,17 +158,17 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">LKM08 - Louis Luxury</a>
+                            <a href="">Casio D154TWH – Nam – Kính Sapphire – Dây Da – Limited Edition</a>
                             <div className="price">
-                                <span>$850</span>
-                                <span className="cancel">$900</span>
+                                <span>2.098.000 ₫</span>
+                                <span className="cancel">2.999.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd5.jpg")} alt="" />
+                            <img src={require("./images/hot/5.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -177,16 +180,16 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Tokyo Talkies</a>
+                            <a href="">TCasio A168WG-9WDF – Nam/Nữ – Kính Nhựa – Quartz (Pin) – Dây Kim Loại</a>
                             <div className="price">
-                                <span>$1349</span>
+                                <span>1.678.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd6.jpg")} alt="" />
+                            <img src={require("./images/hot/6.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -198,17 +201,17 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Black Realize Belt</a>
+                            <a href="">Citizen NH8394-70H – Nam – Automatic (Tự Động) – Dây Kim Loại – Mặt Số 40mm</a>
 
                             <div className="price">
-                                <span>$500</span>
+                                <span>9.177.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd7.jpg")} alt="" />
+                            <img src={require("./images/hot/7.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -220,18 +223,18 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Valentino Garavani</a>
+                            <a href="">Casio AEQ-110W-3AVDF – Nam – Kính Nhựa – Quartz 3ADF110W (Pin) – Dây Cao Su</a>
 
                             <div className="price">
-                                <span>$680</span>
-                                <span className="cancel">$700</span>
+                                <span>1.506.000 ₫</span>
+                                <span className="cancel">1.900.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd8.jpeg")} alt="" />
+                            <img src={require("./images/hot/8.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -243,17 +246,17 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Ankle Boots</a>
+                            <a href="">Doxa D124RBKW – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại</a>
                             <div className="price">
-                                <span>$599</span>
-                                <span className="cancel">$600</span>
+                                <span>31.390.000 ₫</span>
+                                <span className="cancel">33.390.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd8.jpeg")} alt="" />
+                            <img src={require("./images/hot/9.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -265,17 +268,17 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Ankle Boots</a>
+                            <a href="">Casio EFV-540D-2AVUDF – Nam – Quartz (Pin) – Automatic (Tự Động) –  Dây Kim Loại</a>
                             <div className="price">
-                                <span>$599</span>
-                                <span className="cancel">$600</span>
+                                <span>3.529.000 ₫</span>
+                                <span className="cancel">3.829.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd8.jpeg")} alt="" />
+                            <img src={require("./images/hot/10.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -287,17 +290,17 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Ankle Boots</a>
+                            <a href="">Tissot T101.410.11.041.00 – Nam – Kính Sapphire – Quartz (Pin) – Dây Kim Loại</a>
                             <div className="price">
-                                <span>$599</span>
-                                <span className="cancel">$600</span>
+                                <span>8.600.000 ₫</span>
+                                <span className="cancel">9.600.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd8.jpeg")} alt="" />
+                            <img src={require("./images/hot/11.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -309,17 +312,17 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Ankle Boots</a>
+                            <a href="">Seiko SRZ520P1 – Nữ – Quartz 124W (Pin) – Automatic (Tự Động) – Dây Kim Loại</a>
                             <div className="price">
-                                <span>$599</span>
-                                <span className="cancel">$600</span>
+                                <span>6.840.000 ₫</span>
+                                <span className="cancel">7.240.000 ₫</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="product">
                         <div className="img-container">
-                            <img src={require("./images/pd8.jpeg")} alt="" />
+                            <img src={require("./images/hot/12.png")} alt="" />
                             <div className="addCart">
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
@@ -331,10 +334,10 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">Ankle Boots</a>
+                            <a href="">Doxa D124TSVW – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại</a>
                             <div className="price">
-                                <span>$599</span>
-                                <span className="cancel">$600</span>
+                                <span>31.390.000 ₫</span>
+                                <span className="cancel"> &nbsp;32.390.000 ₫</span>
                             </div>
                         </div>
                     </div>
@@ -347,19 +350,19 @@ function Body() {
                 <div className="advert-layout container">
                     <div className="item ">
                         <img src={require("./images/type/formen.png")} alt="" />
-                            <div className="content left">
-                                <span>Đẳng cấp phái mạnh</span>
-                                <h3>FOR MEN</h3>
-                                <a href="">View Collection</a>
-                            </div>
+                        <div className="content left">
+                            <span>Đẳng cấp phái mạnh</span>
+                            <h3>FOR MEN</h3>
+                            <a href="">View Collection</a>
+                        </div>
                     </div>
                     <div className="item">
                         <img src={require("./images/type/forwomen.png")} alt="" />
-                            <div className="content  right">
-                                <span>Sang trọng quý phái</span>
-                                <h3>FOR WOMEN</h3>
-                                <a href="">View Collection</a>
-                            </div>
+                        <div className="content  right">
+                            <span>Sang trọng quý phái</span>
+                            <h3>FOR WOMEN</h3>
+                            <a href="">View Collection</a>
+                        </div>
                     </div>
                 </div>
             </section>
