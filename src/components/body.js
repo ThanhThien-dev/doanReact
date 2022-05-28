@@ -1,11 +1,7 @@
 import React from "react";
+import './css components/Body.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faSearch, faShoppingCart, faSlidersH } from "@fortawesome/free-solid-svg-icons";
-// Glidejs
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />;
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />;
-
-
 
 function Body() {
     return (
@@ -180,7 +176,7 @@ function Body() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <a href="">TCasio A168WG-9WDF – Nam/Nữ – Kính Nhựa – Quartz (Pin) – Dây Kim Loại</a>
+                            <a href="">Casio A168WG-9WDF – Nam/Nữ – Kính Nhựa – Quartz (Pin) – Dây Kim Loại</a>
                             <div className="price">
                                 <span>1.678.000 ₫</span>
                             </div>
