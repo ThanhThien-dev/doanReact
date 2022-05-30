@@ -3,6 +3,8 @@ import './css components/Body.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faSearch, faShoppingCart, faSlidersH } from "@fortawesome/free-solid-svg-icons";
 
+const product = require('./data/product.json')
+
 function Body() {
     return (
         <body>
@@ -74,270 +76,31 @@ function Body() {
                     <h2>SẢN PHẨM HOT</h2>
                     <span>Matching style and class with luxury and comfort</span>
                 </div>
-
                 <div className="product-layout">
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/1.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
+                {product.map((sanpham) => {
+                    const {id, picture, name, price} = sanpham;
+                    return <div key = {id} className="product">
+                    <div className="img-container">
+                        <img src={require(`./images/hot/${picture}`)} alt="" />
+                        <div className="addCart">
+                            <FontAwesomeIcon icon={faShoppingCart} />
                         </div>
-                        <div className="bottom">
-                            <a href="Chi tiết sản phẩm.html">Casio EFV-550L-1AVUDF – Nam – Quartz (Pin) – Dây Da</a>
-                            <div className="price">
-                                <span>3.529.000 ₫</span>
-                            </div>
+
+                        <ul className="side-icons">
+                            <span><FontAwesomeIcon icon={faSearch} /></span>
+                            <span><FontAwesomeIcon icon={faHeart} /></span>
+                            <span><FontAwesomeIcon icon={faSlidersH} /></span>
+                        </ul>
+                    </div>
+                    <div className="bottom">
+                        <a href="Chi tiết sản phẩm.html">{name}</a>
+                        <div className="price">
+                            <span>{price}</span>
                         </div>
                     </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/2.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Casio EFR-S567D-1AVUDF – Nam – Kính Sapphire – Quartz (Pin) – Dây Kim Loại</a>
-                            <div className="price">
-                                <span>5.182.000 ₫</span>
-                                <span className="cancel">5.982.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/3.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Casio AQ-S810W-1A4VDF – Nam – Kính Nhựa – Tough Solar – Dây Cao Su</a>
-                            <div className="price">
-                                <span>3.356.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/4.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Casio D154TWH – Nam – Kính Sapphire – Dây Da – Limited Edition</a>
-                            <div className="price">
-                                <span>2.098.000 ₫</span>
-                                <span className="cancel">2.999.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/5.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Casio A168WG-9WDF – Nam/Nữ – Kính Nhựa – Quartz (Pin) – Dây Kim Loại</a>
-                            <div className="price">
-                                <span>1.678.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/6.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Citizen NH8394-70H – Nam – Automatic (Tự Động) – Dây Kim Loại – Mặt Số 40mm</a>
-
-                            <div className="price">
-                                <span>9.177.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/7.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Casio AEQ-110W-3AVDF – Nam – Kính Nhựa – Quartz 3ADF110W (Pin) – Dây Cao Su</a>
-
-                            <div className="price">
-                                <span>1.506.000 ₫</span>
-                                <span className="cancel">1.900.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/8.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Doxa D124RBKW – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại</a>
-                            <div className="price">
-                                <span>31.390.000 ₫</span>
-                                <span className="cancel">33.390.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/9.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Casio EFV-540D-2AVUDF – Nam – Quartz (Pin) – Automatic (Tự Động) –  Dây Kim Loại</a>
-                            <div className="price">
-                                <span>3.529.000 ₫</span>
-                                <span className="cancel">3.829.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/10.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Tissot T101.410.11.041.00 – Nam – Kính Sapphire – Quartz (Pin) – Dây Kim Loại</a>
-                            <div className="price">
-                                <span>8.600.000 ₫</span>
-                                <span className="cancel">9.600.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/11.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Seiko SRZ520P1 – Nữ – Quartz 124W (Pin) – Automatic (Tự Động) – Dây Kim Loại</a>
-                            <div className="price">
-                                <span>6.840.000 ₫</span>
-                                <span className="cancel">7.240.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="product">
-                        <div className="img-container">
-                            <img src={require("./images/hot/12.png")} alt="" />
-                            <div className="addCart">
-                                <FontAwesomeIcon icon={faShoppingCart} />
-                            </div>
-
-                            <ul className="side-icons">
-                                <span><FontAwesomeIcon icon={faSearch} /></span>
-                                <span><FontAwesomeIcon icon={faHeart} /></span>
-                                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                            </ul>
-                        </div>
-                        <div className="bottom">
-                            <a href="">Doxa D124TSVW – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại</a>
-                            <div className="price">
-                                <span>31.390.000 ₫</span>
-                                <span className="cancel"> &nbsp;32.390.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-
+                </div>
+                })}
+                    
                 </div>
             </section>
 
