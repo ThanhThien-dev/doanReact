@@ -1,10 +1,12 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Header from './components/header';
 import Body from './components/body';
 import ProductList from './components/productList';
 import Footer from './components/footer';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProductDetail from './components/productDetail';
+import Payment from './components/payment';
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
 
         ></Route>
 
-        <Route path="/sanpham" element={<ProductList />}></Route>
+        <Route path="/sanpham" element={<ProductDetail />}></Route>
 
       </Routes>
 
