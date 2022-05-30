@@ -101,23 +101,23 @@ function ProductList() {
 
                 <div className="col-3-of-4">
                     <form action="" >
-                        {/* <div className="item">
-                            <label for="sort-by" ><b>Sort By</b></label>
+                        <div className="item">
+                            <label for="sort-by" ><b>Sắp xếp</b></label>
                             <select name="sort-by" id="sort-by">
-                                <option value="title" selected="selected">Name</option>
+                                <option value="title" selected="selected">Giá</option>
                                 <option value="number">Price</option>
                                 <option value="search_api_relevance">Relevance</option>
                                 <option value="created">Newness</option>
                             </select>
                         </div>
                         <div className="item">
-                            <label for="order-by" ><b>Order</b></label>
+                            <label for="order-by" ><b>Thứ tự</b></label>
                             <select name="order-by" id="sort-by">
-                                <option value="ASC" selected="selected">ASC</option>
-                                <option value="DESC">DESC</option>
+                                <option value="ASC" selected="selected">Tăng dần</option>
+                                <option value="DESC">Giảm dần</option>
                             </select>
-                        </div> */}
-                        <a href="">Thêm sản phẩm</a>
+                        </div>
+                        <a href="">Lọc</a>
                     </form>
 
                     <div className="product-layout">
