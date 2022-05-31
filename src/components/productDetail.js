@@ -2,23 +2,25 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './css components/productDetail.css';
 import { faHeart, faSearch, faShoppingCart, faSlidersH } from "@fortawesome/free-solid-svg-icons";
+const product = require('./data/product.json')
 
 function ProductDetail() {
   return (
     <>
       <section class="section product-detail">
-        <div class="details container">
+
+        {product.map((thongtin) => {
+          const {id, picture, name, price} = thongtin;
+          return <div key = {id} class="details container">
           <div class="left">
             <div class="contain">
               <div class="main">
-                <img src="images/img.chi tiết sản phẩm/sp1.jpg" alt="" />
-                <img src="images/img.chi tiết sản phẩm/sp2.jpg" alt="" />
-                <img src="images/img.chi tiết sản phẩm/sp3.jpg" alt="" />
-                <img src="images/img.chi tiết sản phẩm/sp4.jpg" alt="" />
+                <img src={require(`./images/hot/${picture}`)} alt="" />
+                
               </div>
             </div>
 
-            <div class="thumbnails">
+            {/* <div class="thumbnails">
               <div class="thumbnail">
                 <a href="#" data-id="1"><img src="images/img.chi tiết sản phẩm/sp1.jpg" alt="" /></a>
               </div>
@@ -31,12 +33,12 @@ function ProductDetail() {
               <div class="thumbnail">
                 <a href="#" data-id="4"><img src="images/img.chi tiết sản phẩm/sp4.jpg" alt="" /></a>
               </div>
-            </div>
+            </div> */}
           </div>
           <div class="right">
 
-            <h1>Victorinox Suit</h1>
-            <div class="price">$1500</div>
+            <h1>{name}</h1>
+            <div class="price">{price}</div>
 
             <form class="form">
               <input type="text" placeholder="1" />
@@ -44,6 +46,9 @@ function ProductDetail() {
             </form>
           </div>
         </div>
+        })}
+
+        
       </section>
 
 
@@ -54,86 +59,32 @@ function ProductDetail() {
           <span>Be exclusive, Be Devine, Be yourself</span>
         </div>
         <div class="product-layout container">
-          <div class="product">
-            <div class="img-container">
-              <img src={require("./images/hot/1.png")} alt="" />
-              <div class="addCart">
-                <FontAwesomeIcon icon={faShoppingCart} />
-              </div>
+        {product.map((sanpham) => {
+                    const {id, picture, name, price, hot} = sanpham;
 
-              <ul class="side-icons">
-                <span><FontAwesomeIcon icon={faSearch} /></span>
-                <span><FontAwesomeIcon icon={faHeart} /></span>
-                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-              </ul>
-            </div>
-            <div class="bottom">
-              <a href="">Chelsea boots</a>
-              <div class="price">
-                <span>$900</span>
-              </div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="img-container">
-            <img src={require("./images/hot/2.png")} alt="" />
-              <div class="addCart">
-                <FontAwesomeIcon icon={faShoppingCart} />
-              </div>
+                    if(hot === true && id <= 7){
+                    return <div key = {id} className="product">
+                    <div className="img-container">
+                        <img src={require(`./images/hot/${picture}`)} alt="" />
+                        <div className="addCart">
+                            <FontAwesomeIcon icon={faShoppingCart} />
+                        </div>
 
-              <ul class="side-icons">
-                <span><FontAwesomeIcon icon={faSearch} /></span>
-                <span><FontAwesomeIcon icon={faHeart} /></span>
-                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-              </ul>
-            </div>
-            <div class="bottom">
-              <a href="">LKM08 - Louis Luxury</a>
-              <div class="price">
-                <span>$850</span>
-              </div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="img-container">
-            <img src={require("./images/hot/3.png")} alt="" />
-              <div class="addCart">
-                <FontAwesomeIcon icon={faShoppingCart} />
-              </div>
-
-              <ul class="side-icons">
-                <span><FontAwesomeIcon icon={faSearch} /></span>
-                <span><FontAwesomeIcon icon={faHeart} /></span>
-                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-              </ul>
-            </div>
-            <div class="bottom">
-              <a href="">Valentino Garavani</a>
-              <div class="price">
-                <span>$680</span>
-              </div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="img-container">
-            <img src={require("./images/hot/4.png")} alt="" />
-              <div class="addCart">
-                <FontAwesomeIcon icon={faShoppingCart} />
-              </div>
-
-              <ul class="side-icons">
-                <span><FontAwesomeIcon icon={faSearch} /></span>
-                <span><FontAwesomeIcon icon={faHeart} /></span>
-                <span><FontAwesomeIcon icon={faSlidersH} /></span>
-              </ul>
-            </div>
-            <div class="bottom">
-              <a href="">LV Men Casual</a>
-              <div class="price">
-                <span>$1049</span>
-              </div>
-            </div>
-          </div>
+                        <ul className="side-icons">
+                            <span><FontAwesomeIcon icon={faSearch} /></span>
+                            <span><FontAwesomeIcon icon={faHeart} /></span>
+                            <span><FontAwesomeIcon icon={faSlidersH} /></span>
+                        </ul>
+                    </div>
+                    <div className="bottom">
+                        <a href="Chi tiết sản phẩm.html">{name}</a>
+                        <div className="price">
+                            <span>{price}</span>
+                        </div>
+                    </div>
+                </div>
+                }
+                })}
         </div>
       </section>
     </>

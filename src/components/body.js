@@ -7,7 +7,7 @@ const product = require('./data/product.json')
 
 function Body() {
     return (
-        <body>
+        <div>
 
             <img src={require("./images/banner.jpg")} alt="" width={1686} />
 
@@ -78,7 +78,9 @@ function Body() {
                 </div>
                 <div className="product-layout">
                 {product.map((sanpham) => {
-                    const {id, picture, name, price} = sanpham;
+                    const {id, picture, name, price, hot} = sanpham;
+
+                    if(hot === true){
                     return <div key = {id} className="product">
                     <div className="img-container">
                         <img src={require(`./images/hot/${picture}`)} alt="" />
@@ -99,6 +101,7 @@ function Body() {
                         </div>
                     </div>
                 </div>
+                }
                 })}
                     
                 </div>
@@ -164,7 +167,7 @@ function Body() {
                 </div>
 
             </section> */}
-        </body>
+        </div>
     )
 }
 

@@ -23,7 +23,7 @@ function App() {
 
         ></Route>
 
-        <Route path="/sanpham" element={<ProductDetail />}></Route>
+        <Route path="/sanpham" element={<Payment />}></Route>
 
       </Routes>
 
