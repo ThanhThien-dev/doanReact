@@ -49,9 +49,10 @@ function Footer() {
                         </li>
                         <li>
                             <span><FontAwesomeIcon icon={faPhone} /></span>
-                            <p>Hotline: (028) 3725.2002
+                            <p>Hotline: 
                                 <br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                (028) 3725.2002
+                                <br />
                                 0967.247.555
                             </p>
                         </li>
@@ -71,8 +72,6 @@ function Footer() {
                 {/* COPYRIGHT */}
                 <div className="copyRight">
                     <p className="col-sm">
-                        {/* <hr /> */}
-                        <br />
                         &copy; Bản quyền thuộc về đội ngũ thiết kế website
                         <img className="icon-copyRight" src={require("./img/copyRight.png")} alt="copyRight" />
                         &nbsp;TP Company!

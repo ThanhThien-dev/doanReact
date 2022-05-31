@@ -239,7 +239,7 @@
 
 .black-li {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   list-style: none;
   padding: 0 60px;
   margin: 0 7px;
@@ -252,7 +252,9 @@
 }
 
 /* BODY */
-
+.containerbody {
+  width: 100%;
+}
 
 
 
@@ -326,6 +328,7 @@ footer .container .noi-dung.about p {
   color: yellow;
   word-spacing: 5px;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .social-icon {
@@ -370,7 +373,7 @@ footer .container .noi-dung.about p {
 .links {
   position: relative;
   width: 25%;
-  padding-left: 100px;
+  padding-left: 80px;
 }
 
 .links ul li {
@@ -407,7 +410,7 @@ footer .container .noi-dung.about p {
 .contact {
   width: calc(35% - 60px);
   margin-right: 0 !important;
-  padding-left: 100px;
+  padding-left: 40px;
 }
 
 .contact .info {
@@ -466,7 +469,6 @@ footer .container .noi-dung.about p {
 }
 
 .form__field {
-  width: 80%;
   background: #fff;
   color: #a3a3a3;
   font: inherit;
@@ -481,7 +483,7 @@ footer .container .noi-dung.about p {
   font-size: 20px;
   color: white;
   text-align: center;
-  width: 1378.75px;
+  width: 1000px;
   padding-top: 50px;
 }
 
