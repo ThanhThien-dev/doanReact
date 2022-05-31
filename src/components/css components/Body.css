@@ -50,7 +50,7 @@
   }
   
   .container {
-    max-width: 114rem;
+    max-width: 90%;
     margin: 0 auto;
   }
   
@@ -538,7 +538,7 @@
   
   .promotion-content {
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white);
@@ -562,7 +562,8 @@
   }
   
   .promotion-content a:hover {
-    color: var(--primary);
+    color: yellow;
+    text-decoration: underline;
   }
   
   .promotion-item:hover .promotion-content h3 {
@@ -669,7 +670,7 @@
     position: absolute;
     right: 0;
     bottom: 0.6rem;
-    background-color: var(--white);
+    background-color: yellowgreen;
     border-radius: 50%;
     padding: 1.3rem 1.6rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
@@ -702,7 +703,7 @@
   
   .product .side-icons span {
     font-size: 1.4rem;
-    background-color: var(--white);
+    background-color: red;
     margin: 0.3rem;
     padding: 1rem 1.3rem;
     border-radius: 50%;
@@ -794,7 +795,8 @@
   }
   
   .advert-layout .content a:hover {
-    color: var(--primary);
+    color: red;
+    
   }
   
   .advert-layout .item::after {
@@ -816,7 +818,8 @@
   }
   
   .advert-layout .item:hover .content a {
-    color: var(--white);
+    color: yellow;
+    text-decoration: underline;
   }
   
   .advert-layout .item:hover img {
@@ -1339,9 +1342,9 @@
   }
   
   /* Bordered form */
-  form {
+  /* form {
     border: 3px solid #f1f1f1;
-  }
+  } */
   
   /* Full-width inputs */
   input[type=text], input[type=password] {
@@ -1354,7 +1357,7 @@
   }
   
   /* Set a style for all buttons */
-  button {
+  /* button {
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
@@ -1362,7 +1365,7 @@
     border: none;
     cursor: pointer;
     width: 100%;
-  }
+  } */
   
   /* Add a hover effect for buttons */
   button:hover {

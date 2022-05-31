@@ -1,18 +1,34 @@
 import './App.css';
-import './Body.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Header from './components/header';
 import Body from './components/body';
+import ProductList from './components/productList';
 import Footer from './components/footer';
+import ProductDetail from './components/productDetail';
+import Payment from './components/payment';
 
 function App() {
   return (
-    <div className='page-container'>
-      <div className='container-wrap'>
-        <Header />
-        <Body />
-      </div>
+    <BrowserRouter>
+      <Header />
+
+      <Routes>
+
+        <Route
+          path="/"
+          element={
+            <Body />
+          }
+
+        ></Route>
+
+        <Route path="/sanpham" element={<Payment />}></Route>
+
+      </Routes>
+
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
