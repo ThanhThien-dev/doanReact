@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import './css components/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'jquery/dist/jquery.min.js';
+import 'jquery/dist/jquery.min.js';
 // import 'bootstrap/dist/js/bootstrap.min.js';
-import {Button} from 'react-bootstrap';
 
 function Login() {
     return(
@@ -11,34 +10,35 @@ function Login() {
                 <div class="row">
                     <div className="col-md-3 register-left">
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
-                        <h3>Welcome to YOFA</h3>
-                        <p>The Home for the stylish you!</p>
+                        <h3>Welcome to TimmerMan</h3>
+                        <p>The Home for the stylish!</p>
                     </div>
                     <div className="col-md-9 register-right">
                         <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
                             <li className="nav-item">
-                                <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
+                                <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Đăng nhập</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Signup</a>
+                                <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Đăng kí</a>
                             </li>
                         </ul>
                         <div className="tab-content" id="myTabContent">
                             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 {/* LOGIN */}
-								<h3 className="register-heading">LOGIN</h3>
+								<h3 className="register-heading">ĐĂNG NHẬP</h3>
                             <div className="containerLogin">
-								<label for="uname"><b>Username</b></label>
+								<label for="uname"><b>Tài khoản</b></label>
 								<input className="holder" type="text" placeholder="Enter Username" name="uname" />
                                 <p></p>
-								<label for="uname"><b>Password</b></label>
-								<input className="holder" type="password" placeholder="Enter Password" name="psw" />
+								<label for="uname"><b>Mật khẩu</b></label>
+								&nbsp;&nbsp;<input className="holder" type="password" placeholder="Enter Password" name="psw" />
                                 <p></p>
-     				 			<input type="checkbox" name="remember" /> Remember me <p></p>
+     				 			<input type="checkbox" name="remember" /> <span className="rmb">Ghi nhớ tài khoản</span>
 
-								<span classNameName="forgot" ><a href="#" >Forgot password?</a></span>
+								<span className="forgot" ><a href="#" >Quên mật khẩu?</a></span>
+                                <p></p>
                                 
-								<Button type="submit" id="Alert">LOGIN</Button>
+								<button className="Alert" type="submit" id="Alert">ĐĂNG NHẬP</button>
 								<script language="javascript">
 									var button = document.getElementById("Alert");
 										button.onclick = function(){
