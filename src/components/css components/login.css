@@ -11,7 +11,7 @@
 }
 .register-left{
     text-align: center;
-    color: #fff;
+    color: yellow;
     margin-top: 4%;
 }
 .register-left input{
@@ -69,12 +69,13 @@
     cursor: pointer;
 }
 .register .nav-tabs{
-    margin-top: 3%;
+    margin-top: 2%;
     border: none;
     background: #0062cc;
     border-radius: 1.5rem;
-    width: 28%;
+    width: 22%;
     float: right;
+    font-size: 15px;
 }
 .register .nav-tabs .nav-link{
     padding: 2%;
@@ -96,10 +97,10 @@
 }
 .register-heading{
     text-align: center;
-    margin-top: 8%;
+    margin-top: 7%;
     margin-bottom: -18%;
     color: #495057;
-	font-size: 38px;
+	font-size: 50px;
 }
 
 .holder{
@@ -109,6 +110,7 @@
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 18px;
 }
 
 label {
@@ -119,19 +121,27 @@ label {
 }
 
 .containerLogin{
-    margin-top: 160px;
+    margin-top: 180px;
     margin-left: 220px;
+}
+
+.rmb {
+    font-size: 18px;
 }
 
 .forgot {
     color: black;
-    margin-left: 60px;
+    font-size: 18px;
+    padding-left: 238px;
 }
 
 .Alert{
     width: 42%;
     font-size: 25px;
-    background-color:cadetblue;
+    background-color: blue;
     border-radius: 30px;
+    align-items: center;
+    position: absolute;
+    color: yellow;
 }
 
