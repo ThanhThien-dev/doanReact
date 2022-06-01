@@ -30,14 +30,18 @@ function Login() {
                             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 {/* LOGIN */}
 								<h3 className="register-heading">LOGIN</h3>
-                            <div className="containerLogin">
-								<label  for="uname"><b >Username</b></label>
+                            <div className="container">
+								<label  for="uname"><b>Username</b></label>
 								<input type="text" placeholder="Enter Username" name="uname" />
-								<label for="uname"><b >Password</b></label>
+
+								<label for="uname"><b>Password</b></label>
 								<input type="password" placeholder="Enter Password" name="psw" />
-								<label />
+								
+
      				 			<input type="checkbox" name="remember" /> Remember me <p></p>
+
 								<span classNameName="forgot" ><a href="#" >Forgot password?</a></span> <p></p>
+                                
 								<Button type="submit" id="Alert">LOGIN</Button>
 								<script language="javascript">
 									var button = document.getElementById("Alert");
@@ -46,8 +50,8 @@ function Login() {
 										}
 								</script>
 							</div>
-	
                             </div>
+                            
                             <div className="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                  {/* REGISTER */}
 								<h3  className="register-heading">REGISTER</h3>
@@ -93,7 +97,7 @@ function Login() {
                         </div>
                     </div>
                 </div>
-
+                
     </div>
     )
 }

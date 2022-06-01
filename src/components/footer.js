@@ -63,7 +63,7 @@ function Footer() {
                         <li>
                             <form className="form">
                                 <input type="email" className="form__field" placeholder="Đăng Ký Subscribe Email" />
-                                <button type="button" className="btn btn--primary  uppercase">Gửi</button>
+                                <button type="button" className="btn--primary">Gửi</button>
                             </form>
                         </li>
                     </ul>
