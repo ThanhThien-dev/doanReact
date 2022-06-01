@@ -3,14 +3,11 @@ import './css components/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'jquery/dist/jquery.min.js';
 // import 'bootstrap/dist/js/bootstrap.min.js';
-import {Button} from 'react-bootstrap'
-
-
-
+import {Button} from 'react-bootstrap';
 
 function Login() {
     return(
-        <div className="container register">
+        <div className="register">
                 <div class="row">
                     <div className="col-md-3 register-left">
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
@@ -30,17 +27,16 @@ function Login() {
                             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 {/* LOGIN */}
 								<h3 className="register-heading">LOGIN</h3>
-                            <div className="container">
-								<label  for="uname"><b>Username</b></label>
-								<input type="text" placeholder="Enter Username" name="uname" />
-
+                            <div className="containerLogin">
+								<label for="uname"><b>Username</b></label>
+								<input className="holder" type="text" placeholder="Enter Username" name="uname" />
+                                <p></p>
 								<label for="uname"><b>Password</b></label>
-								<input type="password" placeholder="Enter Password" name="psw" />
-								
-
+								<input className="holder" type="password" placeholder="Enter Password" name="psw" />
+                                <p></p>
      				 			<input type="checkbox" name="remember" /> Remember me <p></p>
 
-								<span classNameName="forgot" ><a href="#" >Forgot password?</a></span> <p></p>
+								<span classNameName="forgot" ><a href="#" >Forgot password?</a></span>
                                 
 								<Button type="submit" id="Alert">LOGIN</Button>
 								<script language="javascript">
