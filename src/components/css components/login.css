@@ -18,7 +18,8 @@
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
-    width: 60%;
+    width: 100%;
+    height: 100%;
     background: #f8f9fa;
     font-weight: bold;
     color: #383d41;
@@ -53,12 +54,13 @@
     font-size: 18px;
 }
 .register .register-form{
-    padding: 10%;
-    margin-top: 10%;
+    padding: 0%;
+    margin-top: 22%;
+    margin-left: 150px;
 }
 .btnRegister{
     float: right;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
@@ -97,13 +99,13 @@
 }
 .register-heading{
     text-align: center;
-    margin-top: 7%;
+    margin-top: 10%;
     margin-bottom: -18%;
     color: #495057;
-	font-size: 50px;
+	font-size: 38px;
 }
 
-.holder{
+.containerLogin input{
     width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -125,6 +127,11 @@ label {
     margin-left: 220px;
 }
 
+.check {
+    align-items: center;
+    margin-left: 23%;
+}
+
 .rmb {
     font-size: 18px;
 }
@@ -132,16 +139,34 @@ label {
 .forgot {
     color: black;
     font-size: 18px;
-    padding-left: 238px;
+    padding-left: 190px;
 }
 
 .Alert{
-    width: 42%;
+    width: 22%;
+    height: 8%;
+    font-size: 20px;
+    background-color: blue;
+    border-radius: 30px;
+    position: absolute;
+    color: yellow;
+    margin-left: 25%;
+}
+
+.AlertRegister{
+    width: 20%;
+    margin-top: 2%;
+    margin-left: -15%;
     font-size: 25px;
     background-color: blue;
     border-radius: 30px;
     align-items: center;
     position: absolute;
     color: yellow;
+}
+
+.form-group {
+    width: 260px;
+    height: 50px;
 }
 

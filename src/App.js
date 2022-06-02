@@ -25,7 +25,7 @@ function App() {
 
         ></Route>
 
-        <Route path="/sanpham" element={<Test />}></Route>
+        <Route path="/sanpham" element={<Login />}></Route>
 
       </Routes>
 

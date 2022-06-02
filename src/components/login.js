@@ -44,7 +44,8 @@ function Login() {
                                     <label for="uname"><b>Mật khẩu</b></label>
                                     &nbsp;&nbsp;<input className="holder" type="password" placeholder="Enter Password" name="psw" />
                                     <p></p>
-                                    <input type="checkbox" name="remember" /> <span className="rmb">Ghi nhớ tài khoản</span>
+                                </div>
+                                    <input className="check" type="checkbox" name="remember" /> <span className="rmb">Ghi nhớ tài khoản</span>
 
                                     <span className="forgot" ><a href="#" >Quên mật khẩu?</a></span>
                                     <p></p>
@@ -56,50 +57,38 @@ function Login() {
                                             // alert("Username or password is incorrect!");
                                         }
                                     </script>
-                                </div>
                             </div>
                         ) : (
                             // REGISTER
-                            <h2>dhkadhkj</h2>
-                            // <div className="tab-pane fade show">
-                            //     <h3 className="register-heading">REGISTER</h3>
-                            //     <div className="row register-form">
-                            //         <div className="col-md-6">
-                            //             <div className="form-group">
-                            //                 <input type="text" className="form-control" placeholder="UserName *" value="" />
-                            //             </div>
-                            //             <div className="form-group">
-                            //                 <input type="text" className="form-control" placeholder="Full Name *" value="" />
-                            //             </div>
-                            //             <div className="form-group">
-                            //                 <input type="email" className="form-control" placeholder="Email *" value="" />
-                            //             </div>
-                            //             <div className="form-group">
-                            //                 <input type="text" maxlength="10" minlength="10" className="form-control" placeholder="Phone *" value="" />
-                            //             </div>
-                            //         </div>
-                            //         <div className="col-md-6">
-                            //             <div className="form-group">
-                            //                 <input type="password" className="form-control" placeholder="Password *" value="" />
-                            //             </div>
-                            //             <div className="form-group">
-                            //                 <input type="password" className="form-control" placeholder="Confirm Password *" value="" />
-                            //             </div>
-                            //             <div className="form-group">
-                            //                 <select className="form-control">
-                            //                     <option className="hidden" selected disabled>Please select your Sequrity Question</option>
-                            //                     <option>What is your Birthdate?</option>
-                            //                     <option>What is Your Hobby?</option>
-                            //                     <option>What is your Pet Name?</option>
-                            //                 </select>
-                            //             </div>
-                            //             <div className="form-group">
-                            //                 <input type="text" className="form-control" placeholder="Answer *" value="" />
-                            //             </div>
-                            //             <input type="submit" className="btnRegister" value="Register now" />
-                            //         </div>
-                            //     </div>
-                            // </div>
+                            <div className="tab-pane fade show active">
+                                <h3 className="register-heading">ĐĂNG KÍ</h3>
+                                <div className="row register-form">
+                                    <div className="col-md-6">
+                                        <div className="form-group">
+                                            <input type="text" className="form-control" placeholder="Tên đăng nhập *" />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="text" className="form-control" placeholder="Họ và tên *" />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="text" className="form-control" placeholder="Email *" />
+                                        </div>
+                                    </div>
+
+                                    <div className="col-md-6">
+                                        <div className="form-group">
+                                            <input type="password" className="form-control" placeholder="Mật khẩu *" />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="password" className="form-control" placeholder="Nhập lại mật khẩu *" />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="text" className="form-control" placeholder="Số điện thoại *" />
+                                        </div>
+                                    <button className="AlertRegister" type="submit" id="Alert">ĐĂNG KÍ</button>
+                                    </div>
+                                </div>
+                            </div>
                         )
                         }
 
