@@ -8,6 +8,7 @@ import Footer from './components/footer';
 import ProductDetail from './components/productDetail';
 import Payment from './components/payment';
 import Login from './components/login';
+import Test from './components/test';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
 
         ></Route>
 
-        <Route path="/sanpham" element={<Login />}></Route>
+        <Route path="/sanpham" element={<Test />}></Route>
 
       </Routes>
 
