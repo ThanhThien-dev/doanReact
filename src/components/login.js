@@ -1,8 +1,11 @@
 import React, { Component } from "react";
+import { useState } from "react";
 import './css components/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 // import 'bootstrap/dist/js/bootstrap.min.js';
+
+
 
 function Login() {
     return(
@@ -22,9 +25,11 @@ function Login() {
                                 <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Đăng kí</a>
                             </li>
                         </ul>
+                        
                         <div className="tab-content" id="myTabContent">
-                            <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
                                 {/* LOGIN */}
+                            <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 								<h3 className="register-heading">ĐĂNG NHẬP</h3>
                             <div className="containerLogin">
 								<label for="uname"><b>Tài khoản</b></label>
@@ -48,8 +53,8 @@ function Login() {
 							</div>
                             </div>
                             
-                            <div className="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                  {/* REGISTER */}
+                            <div className="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 								<h3  className="register-heading">REGISTER</h3>
                                 <div className="row register-form">
                                     <div className="col-md-6">
@@ -65,8 +70,6 @@ function Login() {
                                         <div className="form-group">
                                             <input type="text" maxlength="10" minlength="10" className="form-control" placeholder="Phone *" value="" />
                                         </div>
-
-
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
@@ -90,6 +93,7 @@ function Login() {
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
