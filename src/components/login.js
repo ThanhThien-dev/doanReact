@@ -24,10 +24,10 @@ function Login() {
                 <div className="col-md-9 register-right">
                     <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
                         <li className="nav-item" onClick={() => setShow(true)}>
-                            <a className="nav-link active" href="">Đăng nhập</a>
+                            <a className="nav-link active">Đăng nhập</a>
                         </li>
                         <li className="nav-item" onClick={() => setShow(false)}>
-                            <a className="nav-link" href="">Đăng kí</a>
+                            <a className="nav-link">Đăng kí</a>
                         </li>
                     </ul>
 
@@ -51,12 +51,7 @@ function Login() {
                                     <p></p>
 
                                     <button className="Alert" type="submit" id="Alert">ĐĂNG NHẬP</button>
-                                    <script language="javascript">
-                                        var button = document.getElementById("Alert");
-                                        button.onclick = function(){
-                                            // alert("Username or password is incorrect!");
-                                        }
-                                    </script>
+                                    
                             </div>
                         ) : (
                             // REGISTER
