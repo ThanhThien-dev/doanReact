@@ -7,9 +7,9 @@ const product = require('./data/product.json')
 
 function Body() {
     return (
-        <div>
+        <div className="containerbody">
 
-            <img src={require("./images/banner.jpg")} alt="" width={1686} />
+            <img src={require("./images/banner.jpg")} alt="" width={1263} />
 
             <section className="section promotion">
                 
