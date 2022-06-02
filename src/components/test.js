@@ -33,7 +33,7 @@ function Test() {
 
                         
                             {/* LOGIN */}
-                            <div className="tab-pane fade show">
+                            <div className="tab-pane fade show active">
                                 <h3 className="register-heading">REGISTER</h3>
                                 <div className="containerLogin">
                                 <div className="row register-form">
