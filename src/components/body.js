@@ -2,6 +2,7 @@ import React from "react";
 import './css components/Body.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faSearch, faShoppingCart, faSlidersH } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const product = require('./data/product.json')
 
@@ -85,7 +86,9 @@ function Body() {
                     <div className="img-container">
                         <img src={require(`./images/hot/${picture}`)} alt="" />
                         <div className="addCart">
+                            <Link to={"/chitiet"}>
                             <FontAwesomeIcon icon={faShoppingCart} />
+                            </Link>
                         </div>
 
                         <ul className="side-icons">

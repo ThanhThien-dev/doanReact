@@ -2,14 +2,10 @@ import React, { Component } from "react";
 import { useState } from "react";
 import './css components/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/dist/jquery.min.js';
-// import 'bootstrap/dist/js/bootstrap.min.js';
-
-
 
 function Login() {
 
-    const [show, setShow] = useState();
+    const [show, setShow] = useState(true);
     const [isClickDN, setIsClickDN] = useState(true);
     const [isClickDK, setIsClickDK] = useState(false);
 
@@ -21,7 +17,6 @@ function Login() {
                     <h3>Welcome to TimmerMan</h3>
                     <p>The Home for the stylish!</p>
                 </div>
-
 
                 <div className="col-md-9 register-right">
                     <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -79,7 +74,7 @@ function Login() {
                                 </div>
                                 <input className="check" type="checkbox" name="remember" /> <span className="rmb">Ghi nhớ tài khoản</span>
 
-                                <span className="forgot" ><a href="#" >Quên mật khẩu?</a></span>
+                                <span className="forgot">Quên mật khẩu?</span>
                                 <p></p>
 
                                 <button className="Alert" type="submit" id="Alert">ĐĂNG NHẬP</button>
@@ -120,12 +115,9 @@ function Login() {
                         }
 
                     </div>
+
                 </div>
-
-
-
             </div>
-
         </div>
     )
 }

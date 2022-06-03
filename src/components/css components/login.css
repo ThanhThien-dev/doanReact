@@ -147,6 +147,13 @@ label {
     padding-left: 190px;
 }
 
+.forgot:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+}
+
 .Alert{
     width: 22%;
     height: 8%;

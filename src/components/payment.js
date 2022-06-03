@@ -17,7 +17,7 @@ function Payment() {
                         {product.map((sanpham) => {
                             const {picture, name, price} = sanpham;
                             return <div className="cart-info">
-                            <img src="images/Product/Main - thanh toán.jpg" alt="" />
+                            <img src={require(`./images/hot/${picture}`)} alt="" />
                             <div>
                                 <p>{name}</p>
                                 <span>Price: {price}</span>
