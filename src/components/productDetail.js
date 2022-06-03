@@ -78,7 +78,7 @@ function ProductDetail() {
                         </ul>
                     </div>
                     <div className="bottom">
-                        <a href="Chi tiết sản phẩm.html">{name}</a>
+                        <a>{name}</a>
                         <div className="price">
                             <span>{price}</span>
                         </div>

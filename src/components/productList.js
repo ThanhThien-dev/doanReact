@@ -127,14 +127,14 @@ function ProductList() {
                         {product.map((sanpham) => {
                             const { id, picture, name, price } = sanpham;
 
-                            return <div className="product">
+                            return <div key={id} className="product">
                                 <div className="img-container">
                                     <img src={require(`./images/hot/${picture}`)} alt="" />
-                                    <div className="addCart">
-                                        <Link className="add" to={"/chitiet"}>
+                                    <Link className="add" to={"/chitiet"}>
+                                        <div className="addCart">
                                             <FontAwesomeIcon icon={faShoppingCart} />
-                                        </Link>
-                                    </div>
+                                        </div>
+                                    </Link>
 
                                     <ul className="side-icons">
                                         <span><FontAwesomeIcon icon={faSearch} /></span>

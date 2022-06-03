@@ -10,7 +10,7 @@ function Body() {
     return (
         <div className="containerbody">
 
-            <img src={require("./images/banner.jpg")} alt="" width={1263} />
+            <img src={require("./images/banner.jpg")} alt="" width={1349} />
 
             <section className="section promotion">
                 
