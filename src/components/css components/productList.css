@@ -1,3 +1,7 @@
+.add {
+  color: black;
+}
+
 .products {
     margin-top: 0px;
   }
@@ -108,9 +112,18 @@
     margin-bottom: 8rem;
   }
 
+  .price {
+    margin-bottom: 10px;
+  }
+
   .brand-name {
     color: black;
     font-size: 20px;
+  }
+
+  .bottomName {
+    color: black;
+    font-size: 15px;
   }
 
   .brand-box {
@@ -146,7 +159,7 @@
   }
 
   .block-content {
-    padding-left: 145px;
+    padding-left: 100px;
     text-align: left;
   }
   

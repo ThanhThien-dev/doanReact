@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './css components/productList.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSlidersH, faHeart, faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
@@ -126,12 +127,14 @@ function ProductList() {
                         {product.map((sanpham) => {
                             const { id, picture, name, price } = sanpham;
 
-                            return <div className="product">
+                            return <div key={id} className="product">
                                 <div className="img-container">
                                     <img src={require(`./images/hot/${picture}`)} alt="" />
-                                    <div className="addCart">
-                                        <i><FontAwesomeIcon icon={faShoppingCart} /></i>
-                                    </div>
+                                    <Link className="add" to={"/chitiet"}>
+                                        <div className="addCart">
+                                            <FontAwesomeIcon icon={faShoppingCart} />
+                                        </div>
+                                    </Link>
 
                                     <ul className="side-icons">
                                         <span><FontAwesomeIcon icon={faSearch} /></span>
@@ -140,7 +143,7 @@ function ProductList() {
                                     </ul>
                                 </div>
                                 <div className="bottom">
-                                    <a href="">{name}</a>
+                                    <div className="bottomName">{name}</div>
                                     <div className="price">
                                         <span>{price}</span>
                                     </div>

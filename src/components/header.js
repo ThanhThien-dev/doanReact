@@ -65,8 +65,9 @@ function Header() {
                     <div className="login">
 
                         <div className="giohang">
-                            <span className="sl">SL: 0</span>
+                            <Link to={"/giohang"}>
                             <FontAwesomeIcon className="giohang-icon" icon={faBagShopping} />
+                            </Link>
                         </div>
 
                         {currentUser ? (
@@ -77,7 +78,9 @@ function Header() {
                         ) : (
 
                             <div className="action">
+                                <Link to={"/login"}>
                                 <button className="btn-login">Đăng nhập</button>
+                                </Link>
                             </div>
 
                         )}

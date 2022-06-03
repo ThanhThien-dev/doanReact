@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './css components/productDetail.css';
 import { faHeart, faSearch, faShoppingCart, faSlidersH } from "@fortawesome/free-solid-svg-icons";
@@ -42,7 +43,7 @@ function ProductDetail() {
 
             <form class="form">
               <input type="text" placeholder="1" />
-              <a href="Thanh toán.html" class="addCart">Add To Cart</a>
+              <Link to={"/giohang"} class="addCart">Thanh toán</Link>
             </form>
           </div>
         </div>
@@ -77,7 +78,7 @@ function ProductDetail() {
                         </ul>
                     </div>
                     <div className="bottom">
-                        <a href="Chi tiết sản phẩm.html">{name}</a>
+                        <a>{name}</a>
                         <div className="price">
                             <span>{price}</span>
                         </div>

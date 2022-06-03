@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import { useState } from "react";
 import './css components/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/dist/jquery.min.js';
-// import 'bootstrap/dist/js/bootstrap.min.js';
-
-
 
 function Login() {
 
     const [show, setShow] = useState(true);
+    const [isClickDN, setIsClickDN] = useState(true);
+    const [isClickDK, setIsClickDK] = useState(false);
 
     return (
         <div className="register">
@@ -20,14 +18,43 @@ function Login() {
                     <p>The Home for the stylish!</p>
                 </div>
 
-
                 <div className="col-md-9 register-right">
                     <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                        <li className="nav-item" onClick={() => setShow(true)}>
-                            <a className="nav-link active" href="">Đăng nhập</a>
+                        <li className="nav-item">
+                            {isClickDN ? (
+                                <div className="nav-link active" onClick={() => setShow(true)}>
+                                    Đăng nhập
+                                </div>
+                            ) : (
+                                <div
+                                    className="nav-link"
+                                    onClick={() => {
+                                        setShow(true);
+                                        setIsClickDN(true);
+                                        setIsClickDK(false);
+                                    }}
+                                >
+                                    Đăng nhập
+                                </div>
+                            )}
                         </li>
-                        <li className="nav-item" onClick={() => setShow(false)}>
-                            <a className="nav-link" href="">Đăng kí</a>
+                        <li className="nav-item">
+                            {isClickDK ? (
+                                <div className="nav-link active" onClick={() => setShow(false)}>
+                                    Đăng ký
+                                </div>
+                            ) : (
+                                <div
+                                    className="nav-link"
+                                    onClick={() => {
+                                        setShow(false);
+                                        setIsClickDN(false);
+                                        setIsClickDK(true);
+                                    }}
+                                >
+                                    Đăng ký
+                                </div>
+                            )}
                         </li>
                     </ul>
 
@@ -45,23 +72,18 @@ function Login() {
                                     &nbsp;&nbsp;<input className="holder" type="password" placeholder="Enter Password" name="psw" />
                                     <p></p>
                                 </div>
-                                    <input className="check" type="checkbox" name="remember" /> <span className="rmb">Ghi nhớ tài khoản</span>
+                                <input className="check" type="checkbox" name="remember" /> <span className="rmb">Ghi nhớ tài khoản</span>
 
-                                    <span className="forgot" ><a href="#" >Quên mật khẩu?</a></span>
-                                    <p></p>
+                                <span className="forgot">Quên mật khẩu?</span>
+                                <p></p>
 
-                                    <button className="Alert" type="submit" id="Alert">ĐĂNG NHẬP</button>
-                                    <script language="javascript">
-                                        var button = document.getElementById("Alert");
-                                        button.onclick = function(){
-                                            // alert("Username or password is incorrect!");
-                                        }
-                                    </script>
+                                <button className="Alert" type="submit" id="Alert">ĐĂNG NHẬP</button>
+
                             </div>
                         ) : (
                             // REGISTER
                             <div className="tab-pane fade show active">
-                                <h3 className="register-heading">ĐĂNG KÍ</h3>
+                                <h3 className="register-heading">ĐĂNG KÝ</h3>
                                 <div className="row register-form">
                                     <div className="col-md-6">
                                         <div className="form-group">
@@ -85,20 +107,17 @@ function Login() {
                                         <div className="form-group">
                                             <input type="text" className="form-control" placeholder="Số điện thoại *" />
                                         </div>
-                                    <button className="AlertRegister" type="submit" id="Alert">ĐĂNG KÍ</button>
+                                        <button className="AlertRegister" type="submit" id="Alert">ĐĂNG KÝ</button>
                                     </div>
                                 </div>
                             </div>
                         )
                         }
 
-                        </div>
+                    </div>
+
                 </div>
-
-                    
-
             </div>
-
         </div>
     )
 }
