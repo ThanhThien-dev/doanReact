@@ -739,7 +739,7 @@
   
   /* ADVERTS */
   .advert {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 
   .advert .advert-layout {
@@ -928,7 +928,7 @@
   
   /* Cart Page */
   .cart {
-    margin: 20rem auto;
+    margin: auto;
   }
   
   table {
