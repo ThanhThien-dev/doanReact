@@ -8,6 +8,7 @@ import Footer from './components/footer';
 import ProductDetail from './components/productDetail';
 import Payment from './components/payment';
 import Login from './components/login';
+import Admin from './components/admin';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route
           path="/"
           element={
-            <Body />
+            <Admin />
           }
 
         ></Route>

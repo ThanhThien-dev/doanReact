@@ -13,7 +13,7 @@ function Body() {
             <img src={require("./images/banner.jpg")} alt="" width={1349} />
 
             <section className="section promotion">
-                
+
                 {/* DANH MỤC SẢN PHẨM */}
                 <div className="title">
                     <h2>THƯƠNG HIỆU NỔI TIẾNG</h2>
@@ -78,35 +78,35 @@ function Body() {
                     <span>Matching style and class with luxury and comfort</span>
                 </div>
                 <div className="product-layout">
-                {product.map((sanpham) => {
-                    const {id, picture, name, price, hot} = sanpham;
+                    {product.map((sanpham) => {
+                        const { id, picture, name, price, hot } = sanpham;
 
-                    if(hot === true){
-                    return <div key = {id} className="product">
-                    <div className="img-container">
-                        <img src={require(`./images/hot/${picture}`)} alt="" />
-                        <div className="addCart">
-                            <Link to={"/chitiet"}>
-                            <FontAwesomeIcon icon={faShoppingCart} />
-                            </Link>
-                        </div>
+                        if (hot === true) {
+                            return <div key={id} className="product">
+                                <div className="img-container">
+                                    <img src={require(`./images/hot/${picture}`)} alt="" />
+                                    <Link to={"/chitiet"}>
+                                        <div className="addCart">
+                                            <FontAwesomeIcon icon={faShoppingCart} />
+                                        </div>
+                                    </Link>
 
-                        <ul className="side-icons">
-                            <span><FontAwesomeIcon icon={faSearch} /></span>
-                            <span><FontAwesomeIcon icon={faHeart} /></span>
-                            <span><FontAwesomeIcon icon={faSlidersH} /></span>
-                        </ul>
-                    </div>
-                    <div className="bottom">
-                        <a href="Chi tiết sản phẩm.html">{name}</a>
-                        <div className="price">
-                            <span>{price}</span>
-                        </div>
-                    </div>
-                </div>
-                }
-                })}
-                    
+                                    <ul className="side-icons">
+                                        <span><FontAwesomeIcon icon={faSearch} /></span>
+                                        <span><FontAwesomeIcon icon={faHeart} /></span>
+                                        <span><FontAwesomeIcon icon={faSlidersH} /></span>
+                                    </ul>
+                                </div>
+                                <div className="bottom">
+                                    <a href="Chi tiết sản phẩm.html">{name}</a>
+                                    <div className="price">
+                                        <span>{price}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    })}
+
                 </div>
             </section>
 
