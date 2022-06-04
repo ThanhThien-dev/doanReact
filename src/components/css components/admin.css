@@ -1,9 +1,7 @@
-.table {
-    width: 1200px;
+.table-admin {
+    
     height: 500px;
     align-items: center;
-    border: 1px red;
-    display: flex;
 }
 
 .tittle {
@@ -14,16 +12,22 @@
     text-align: center;
 }
 
+.table-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .left {
     float: left;
     background-color: white;
-    width: 30%;
+    width: 500px;
     height: 100%;
 }
 
 .right {
     float: right;
     background-color: #ccd4d1;
-    width: 70%;
+    width: 900px;
     height: 100%;
 }
