@@ -14,15 +14,16 @@
 
 .table-content {
     width: 1100px;
-    height: 550px;
+    height: 570px;
     margin-left: 125px;
 }
 
 .table-content h1 {
     height: 40px;
-    background: yellow;
+    background: black;
     text-align: center;
     border: 1px solid #b1154a;
+    color: white;
 }
 
 .left {
@@ -51,15 +52,18 @@
 .ds:hover {
     cursor: pointer;
     background: rgb(83, 110, 231);
+    color: whitesmoke;
 }
 
 .header-right {
+    width: 100%;
     border: 1px solid black;
     padding: 5px 0px;
+
 }
 
 .khungpic {
-    width: 100%;
+    width: 220px;
     height: 100%;
 }
 
@@ -67,7 +71,99 @@
     width: 200px;
     height: 200px;
     border: 1px solid #cc0000;
-    align-items: center;
-    text-align: center;
     margin-left: 5px;
+}
+
+.detail {
+    width: 600px;
+    height: 100%;
+    display: flex;
+}
+
+.detail ul li {
+    padding-top: 10px;
+}
+
+.detail-chitiet {
+    font-size: 18px;
+    padding: 0px 30px;
+}
+
+.fix-chitiet {
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.detail-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.detail-right ul li input {
+    padding-left: 10px;
+}
+
+.bottom-right {
+    align-items: center;
+}
+
+.sellect-brand {
+    float: right;
+    width: 300px;
+    margin-left: 29px;
+}
+
+.fix-chitiet {
+    align-items: center;
+    text-align: right;
+    margin-left: 100px;
+}
+
+.fix-chitiet li {
+    padding-top: 15px;
+}
+
+.fix-chitiet li input {
+    float: right;
+    width: 300px;
+    margin-left: 29px;
+}
+
+.option {
+    text-align: center;
+
+}
+
+button {
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    color: yellow;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.add {
+    background: #0151fc;
+    color: yellow;
+}
+
+.save {
+    background: yellow;
+    color: #a802ff;
+}
+
+.del {
+    background: red;
+    color: white;
 }
