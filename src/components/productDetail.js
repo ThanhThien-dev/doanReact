@@ -12,6 +12,7 @@ function ProductDetail() {
 
         {product.map((thongtin) => {
           const { id, picture, name, price } = thongtin;
+          if (id == 1) {
           return <div key={id} class="details container">
             <div class="left">
               <div class="contain">
@@ -32,6 +33,7 @@ function ProductDetail() {
               </form>
             </div>
           </div>
+          }
         })}
 
       </section>

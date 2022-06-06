@@ -1,7 +1,7 @@
 /* PRODUCT DETAILS */
 
 .product-detail {
-    margin-top: 5rem;
+    margin-top: -2rem;
   }
   
   .product-detail .details {
@@ -108,7 +108,8 @@
   .product-detail .form input {
     padding: 0.8rem;
     text-align: center;
-    width: 3.5rem;
+    width: 4rem;
+    height: 4rem;
     margin-right: 2rem;
   }
   
@@ -117,13 +118,14 @@
     padding: 0.8rem 4rem;
     color: var(--white);
     border-radius: 3rem;
+    font-size: 18px;
   }
   
   .product-detail h3 {
     text-transform: uppercase;
     margin-bottom: 2rem;
   }
-  
+
   @media only screen and (max-width: 996px) {
     .product-detail .left {
       height: 45rem;

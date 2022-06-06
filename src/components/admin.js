@@ -8,7 +8,7 @@ function Admin() {
     <div className="table-admin">
       <div className="tittle">QUẢN LÝ SẢN PHẨM</div>
       <div className="table-content">
-        <div className="left">
+        <div className="admin-left">
           <h1>Danh sách sản phẩm</h1>
 
           {product.map((ten) => {
@@ -23,7 +23,7 @@ function Admin() {
         {product.map((ten) => {
           const { id, picture, brand, name, price, sex, quantity } = ten;
           if (id === 1) {
-            return <div className="right">
+            return <div className="admin-right">
               <h1>Thông tin chi tiết</h1>
 
               <div className="header-right">

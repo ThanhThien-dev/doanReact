@@ -12,7 +12,6 @@
   .cart-info {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
   }
   
   .cart-info span {
@@ -21,6 +20,7 @@
   
   .tp {
     border: 1px solid black;
+    text-align: center;
   }
 
   .tp th{
@@ -29,11 +29,13 @@
 
   .bang {
     border: 1px solid black;
+    text-align: center;
   }
 
   tr {
     width: 100%;
     height: 50px;
+    border: 1px solid black;
   }
   
   th {
@@ -53,6 +55,8 @@
     width: 5rem;
     height: 3rem;
     padding: 0.5rem;
+    text-align: center;
+    padding-left: 20px;
   }
   
   td a {
@@ -63,8 +67,11 @@
   td img {
     width: 8rem;
     height: 8rem;
-    border: 1px solid black;
     margin-right: 1rem;
+  }
+
+  .trPayment {
+    border: 1px solid black;
   }
   
   .total-price {
@@ -82,6 +89,7 @@
     padding: 0.7rem 1.6rem;
     font-weight: 700;
     border-radius: 3rem;
+    font-size: 20px;
   }
   
   .total-price table {
@@ -91,11 +99,11 @@
   }
   
   td:last-child {
-    text-align: right;
+    text-align: center;
   }
   
   th:last-child {
-    text-align: right;
+    text-align: center;
   }
   
   @media only screen and (max-width: 567px) {
