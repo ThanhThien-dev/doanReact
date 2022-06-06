@@ -2,6 +2,7 @@
     width: 100%;
     border-collapse: collapse;
     font-size: 15px;
+    border: 1px solid black;
   }
 
   .cart {
@@ -16,6 +17,18 @@
   
   .cart-info span {
     color: var(--grey2);
+  }
+  
+  .tp {
+    border: 1px solid black;
+  }
+
+  .tp th{
+    border: 1px solid black;
+  }
+
+  .bang {
+    border: 1px solid black;
   }
 
   tr {
@@ -50,6 +63,7 @@
   td img {
     width: 8rem;
     height: 8rem;
+    border: 1px solid black;
     margin-right: 1rem;
   }
   

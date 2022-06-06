@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import './css components/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -77,7 +78,9 @@ function Login() {
                                 <span className="forgot">Quên mật khẩu?</span>
                                 <p></p>
 
+                                <Link to={"/admin"}>
                                 <button className="Alert" type="submit" id="Alert">ĐĂNG NHẬP</button>
+                                </Link>
 
                             </div>
                         ) : (

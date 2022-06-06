@@ -141,6 +141,10 @@
     text-align: center;
   }
 
+  .addCart {
+    color: black;
+  }
+
   .box {
     display: inline-block;
     vertical-align: middle;
