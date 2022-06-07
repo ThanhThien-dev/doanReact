@@ -151,10 +151,10 @@ function ProductList() {
 
                     {/* CHUYỂN TRANG */}
                     <ul className="pagination">
-                        <span className="last">First</span>
+                        <span className="last">⫷ First</span>
                         <span>1</span>
                         <span>2</span>
-                        <span className="last">Last »</span>
+                        <span className="last">Last ⫸</span>
                     </ul>
                 </div>
             </div>

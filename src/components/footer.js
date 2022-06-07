@@ -42,13 +42,13 @@ function Footer() {
                     <h2>Thông Tin Liên Hệ</h2>
                     <ul className="info">
                         <li>
-                            <span><FontAwesomeIcon icon={faLocationDot} /></span>
+                            <span><FontAwesomeIcon className="iconfooter" icon={faLocationDot} /></span>
                             <span>Phường Linh Trung<br />
                                 TP.Thủ Đức<br />
                                 TP.Hồ Chí Minh</span>
                         </li>
                         <li>
-                            <span><FontAwesomeIcon icon={faPhone} /></span>
+                            <span><FontAwesomeIcon className="iconfooter" icon={faPhone} /></span>
                             <p>Hotline: 
                                 <br />
                                 (028) 3725.2002
@@ -57,7 +57,7 @@ function Footer() {
                             </p>
                         </li>
                         <li>
-                            <span><FontAwesomeIcon icon={faEnvelope} /></span>
+                            <span><FontAwesomeIcon className="iconfooter" icon={faEnvelope} /></span>
                             <p>Email: info@uit.edu.vn</p>
                         </li>
                         <li>
