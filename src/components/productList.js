@@ -43,7 +43,7 @@ function ProductList() {
                                 <label for="">
                                     <span className="brand-name">Casio</span>
                                     <span className="brand-box">
-                                        <span className="box">10</span>
+                                        <span className="box">7</span>
                                     </span>
                                 </label>
                             </li>
@@ -53,7 +53,7 @@ function ProductList() {
                                 <label for="">
                                     <span className="brand-name">Citizen</span>
                                     <span className="brand-box">
-                                        <span className="box">7</span>
+                                        <span className="box">3</span>
                                     </span>
                                 </label>
                             </li>
@@ -63,7 +63,7 @@ function ProductList() {
                                 <label for="">
                                     <span className="brand-name">Doxa</span>
                                     <span className="brand-box">
-                                        <span className="box">3</span>
+                                        <span className="box">2</span>
                                     </span>
                                 </label>
                             </li>
@@ -73,7 +73,7 @@ function ProductList() {
                                 <label for="">
                                     <span className="brand-name">Tissot</span>
                                     <span className="brand-box">
-                                        <span className="box">3</span>
+                                        <span className="box">2</span>
                                     </span>
                                 </label>
                             </li>
@@ -83,7 +83,7 @@ function ProductList() {
                                 <label for="">
                                     <span className="brand-name">Seiko</span>
                                     <span className="brand-box">
-                                        <span className="box">5</span>
+                                        <span className="box">1</span>
                                     </span>
                                 </label>
                             </li>
@@ -93,7 +93,7 @@ function ProductList() {
                                 <label for="">
                                     <span className="brand-name">Rolex</span>
                                     <span className="brand-box">
-                                        <span className="box">8</span>
+                                        <span className="box">0</span>
                                     </span>
                                 </label>
                             </li>
@@ -107,9 +107,6 @@ function ProductList() {
                             <label for="sort-by" ><b>Sắp xếp</b></label>
                             <select name="sort-by" id="sort-by">
                                 <option value="title" selected="selected">Giá</option>
-                                <option value="number">Price</option>
-                                <option value="search_api_relevance">Relevance</option>
-                                <option value="created">Newness</option>
                             </select>
                         </div>
                         <div className="item">
@@ -154,10 +151,10 @@ function ProductList() {
 
                     {/* CHUYỂN TRANG */}
                     <ul className="pagination">
-                        <span className="last">First</span>
+                        <span className="last">⫷ First</span>
                         <span>1</span>
                         <span>2</span>
-                        <span className="last">Last »</span>
+                        <span className="last">Last ⫸</span>
                     </ul>
                 </div>
             </div>

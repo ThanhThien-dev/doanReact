@@ -452,6 +452,10 @@ footer .container .noi-dung.about p {
   text-decoration: none;
 }
 
+.iconfooter {
+  color: rgb(208, 248, 156);
+}
+
 .btn {
   display: inline-block;
   background: transparent;
