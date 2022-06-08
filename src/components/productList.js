@@ -63,6 +63,7 @@ function ProductList() {
                   onChange={(e) => {
                     if (e.target.checked) {
                       setGender("gender=Nam");
+                      setPage("page=1");
                     }
                   }}
                 />
@@ -78,6 +79,7 @@ function ProductList() {
                   onChange={(e) => {
                     if (e.target.checked) {
                       setGender("gender=Nu");
+                      setPage("page=1");
                     }
                   }}
                 />
@@ -102,6 +104,7 @@ function ProductList() {
                   onChange={(e) => {
                     if (e.target.checked) {
                       setCompany("company=Casio");
+                      setPage("page=1");
                     }
                   }}
                 />
@@ -121,6 +124,7 @@ function ProductList() {
                   onChange={(e) => {
                     if (e.target.checked) {
                       setCompany("company=Citizen");
+                      setPage("page=1");
                     }
                   }}
                 />
@@ -140,6 +144,7 @@ function ProductList() {
                   onChange={(e) => {
                     if (e.target.checked) {
                       setCompany("company=Doxa");
+                      setPage("page=1");
                     }
                   }}
                 />
@@ -159,6 +164,7 @@ function ProductList() {
                   onChange={(e) => {
                     if (e.target.checked) {
                       setCompany("company=Tissot");
+                      setPage("page=1");
                     }
                   }}
                 />
@@ -178,6 +184,7 @@ function ProductList() {
                   onChange={(e) => {
                     if (e.target.checked) {
                       setCompany("company=Seiko");
+                      setPage("page=1");
                     }
                   }}
                 />
@@ -197,6 +204,7 @@ function ProductList() {
                   onChange={(e) => {
                     if (e.target.checked) {
                       setCompany("company=Rolex");
+                      setPage("page=1");
                     }
                   }}
                 />
