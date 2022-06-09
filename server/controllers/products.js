@@ -70,7 +70,7 @@ const getAllProduct = async (req, res) => {
 
   const products = await result;
 
-  const allProduct = await Product.find({});
+  const allProduct = await Product.find(queryOject);
   const totalPage = Math.ceil(allProduct.length / limit);
 
   res.status(200).json({ products, nbHits: products.length, totalPage });
