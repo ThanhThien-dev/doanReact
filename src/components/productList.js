@@ -252,7 +252,18 @@ function ProductList() {
                 <option value="DESC">Giảm dần</option>
               </select>
             </div>
-            <a href="">Lọc</a>
+            <div className="item">
+              <label for="sort-by">
+                <b>Tầm giá</b>
+              </label>
+              <select name="sort-by" id="sort-by">
+                <option value="title" selected="selected">Chọn mức giá</option>
+                <option value="title">Từ 0 - 5 triệu</option>
+                <option value="title">Từ 5 - 10 triệu</option>
+                <option value="title">Từ 10 - 20 triệu</option>
+                <option value="title">Trên 20 triệu</option>
+              </select>
+            </div>
           </form>
 
           {loading ? (
