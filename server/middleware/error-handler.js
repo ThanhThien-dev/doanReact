@@ -7,8 +7,13 @@ const errorHandlerMiddleware = (err, req, res, next) => {
   };
 
   if (err.code && err.code === 11000) {
-    customError.msg = `Duplicate email: ${err.keyValue.email}, please choose another email`;
-    customError.statusCode = 400;
+    if (err.keyValue.email) {
+      customError.msg = `Duplicate email: ${err.keyValue.email}, please choose another email`;
+      customError.statusCode = 400;
+    } else {
+      customError.msg = `Duplicate username: ${err.keyValue.username}, please choose another username`;
+      customError.statusCode = 400;
+    }
   }
 
   if (err.name === "ValidationError") {
