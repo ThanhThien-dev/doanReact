@@ -1,6 +1,5 @@
 const jwt = require("jsonwebtoken");
 const { UnauthenticatedError } = require("../error");
-const User = require("../models/user");
 
 const authenticationMiddleware = async (req, res, next) => {
   const authHeader = req.headers.authorization;
@@ -23,4 +22,13 @@ const authenticationMiddleware = async (req, res, next) => {
   }
 };
 
-module.exports = authenticationMiddleware;
+const authorizeRoles = (...roles) => {
+  return (req, res, next) => {
+    if (!roles.includes(req.user.role)) {
+      throw new UnauthenticatedError("Not authorized to access this route");
+    }
+    next();
+  };
+};
+
+module.exports = { authenticationMiddleware, authorizeRoles };

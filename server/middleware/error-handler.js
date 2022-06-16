@@ -23,6 +23,8 @@ const errorHandlerMiddleware = (err, req, res, next) => {
     customError.statusCode = 400;
   }
 
+  //return res.status(500).json({ err });
+
   if (err.name === "CastError") {
     customError.msg = `No product with id: ${err.value}`;
     customError.statusCode = 404;

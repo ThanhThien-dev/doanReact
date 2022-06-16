@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBagShopping,
   faMagnifyingGlass,
+  faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import AccountItem from "./data/accountItem";
 import { Link } from "react-router-dom";
+import "./css components/header.css";
 
 function Header() {
   const [searchResult, setSearchResult] = useState([]);
@@ -68,11 +70,14 @@ function Header() {
           {/* GIỎ HÀNG */}
           <div className="login">
             <div className="giohang">
-              <Link to={"/giohang"}>
-                <FontAwesomeIcon
-                  className="giohang-icon"
-                  icon={faBagShopping}
-                />
+              <Link to={"/cart"} className="cart">
+                <div className="icon-container">
+                  <FontAwesomeIcon
+                    className="giohang-icon"
+                    icon={faBagShopping}
+                  />
+                  <span className="cart_badge">0</span>
+                </div>
               </Link>
             </div>
 
@@ -88,7 +93,11 @@ function Header() {
                     window.location.reload();
                   }}
                 >
-                  Log out
+                  <FontAwesomeIcon
+                    className="logout"
+                    title="Log Out"
+                    icon={faRightFromBracket}
+                  />
                 </button>
               </div>
             ) : (

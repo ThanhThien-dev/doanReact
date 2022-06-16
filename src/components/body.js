@@ -31,7 +31,7 @@ function Body() {
 
   return (
     <div className="containerbody">
-      <img src={require("./images/banner.jpg")} alt="" width={1349} />
+      <img src={require("./images/banner.jpg")} alt="Banner" width={1263} />
 
       <section className="section promotion">
         {/* DANH MỤC SẢN PHẨM */}
@@ -105,7 +105,7 @@ function Body() {
               <div key={_id} className="product">
                 <div className="img-container">
                   <img src={require(`./images/hot/${picture}`)} alt="" />
-                  <Link to={"/chitiet"}>
+                  <Link to={`/chitiet/${_id}`}>
                     <div className="addCart">
                       <FontAwesomeIcon icon={faShoppingCart} />
                     </div>

@@ -269,7 +269,7 @@ function ProductList() {
                         src={`http://localhost:3000/images/${picture}`}
                         alt={name}
                       />
-                      <Link className="add" to={"/chitiet"}>
+                      <Link className="add" to={`/chitiet/${_id}`}>
                         <div className="addCart">
                           <FontAwesomeIcon icon={faShoppingCart} />
                         </div>

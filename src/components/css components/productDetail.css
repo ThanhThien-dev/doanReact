@@ -103,6 +103,7 @@
   
   .product-detail .form {
     margin-bottom: 3rem;
+    font-size: 20px;
   }
   
   .product-detail .form input {
@@ -125,6 +126,7 @@
     text-transform: uppercase;
     margin-bottom: 2rem;
   }
+
 
   @media only screen and (max-width: 996px) {
     .product-detail .left {

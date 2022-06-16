@@ -9,6 +9,7 @@ function Login() {
   const [show, setShow] = useState(true);
   const [isClickDN, setIsClickDN] = useState(true);
   const [isClickDK, setIsClickDK] = useState(false);
+  const [alert, setAlert] = useState("");
   const [registerInfo, setRegisterInfo] = useState({
     username: "",
     password: "",
@@ -37,7 +38,8 @@ function Login() {
           console.log(res);
         })
         .catch((err) => {
-          console.log(err);
+          console.log(err.response.data.msg);
+          setAlert(err.response.data.msg);
         });
     }
   };
@@ -60,8 +62,8 @@ function Login() {
 
   if (isLogin) {
     return (
-      <a href="/">
-        <h2>Go to home page</h2>
+      <a href="/" style={{ textDecoration: "none" }}>
+        <h2 className="success">ĐĂNG NHẬP THÀNH CÔNG</h2>
       </a>
     );
   } else {
@@ -69,7 +71,10 @@ function Login() {
       <div className="register">
         <div class="row">
           <div className="col-md-3 register-left">
-            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+            <img
+              src="https://agelocer.vn/wp-content/uploads/2021/11/dong-ho-nam-agelocer-astronomer-series-6401f2-400x533.png"
+              alt=""
+            />
             <h3>Welcome to TimmerMan</h3>
             <p>The Home for the stylish!</p>
           </div>
@@ -180,6 +185,7 @@ function Login() {
                 // REGISTER
                 <div className="tab-pane fade show active">
                   <h3 className="register-heading">ĐĂNG KÝ</h3>
+
                   <form onSubmit={registerForm}>
                     <div className="row register-form">
                       <div className="col-md-6">
@@ -213,7 +219,7 @@ function Login() {
                         </div>
                         <div className="form-group">
                           <input
-                            type="email"
+                            type="text"
                             className="form-control"
                             placeholder="Email *"
                             onChange={(e) => {
@@ -255,7 +261,7 @@ function Login() {
                         </div>
                         <div className="form-group">
                           <input
-                            type="number"
+                            type="text"
                             className="form-control"
                             placeholder="Số điện thoại *"
                             onChange={(e) => {
@@ -276,6 +282,7 @@ function Login() {
                         </button>
                       </div>
                     </div>
+                    <div className="form-alert">{alert}</div>
                   </form>
                 </div>
               )}

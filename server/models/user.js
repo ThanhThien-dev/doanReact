@@ -33,6 +33,11 @@ const userSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Please provide phone number"],
   },
+  role: {
+    type: String,
+    enum: ["admin", "user"],
+    default: "user",
+  },
 });
 
 userSchema.methods.createJWT = function () {

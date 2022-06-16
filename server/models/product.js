@@ -5,6 +5,7 @@ const productSchema = new mongoose.Schema(
     name: {
       type: String,
       require: [true, "product name must be provided"],
+      unique: true,
       cast: false,
     },
     price: {
@@ -22,10 +23,10 @@ const productSchema = new mongoose.Schema(
     company: {
       type: String,
       enum: {
-        values: ["Casio", "Citizen", "Doxa", "Tissot", "Seiko"],
+        values: ["Casio", "Citizen", "Doxa", "Tissot", "Seiko", "Rolex"],
         message: "{VALUE} is not supported",
       },
-      default: "ikea",
+      default: "Casio",
     },
     gender: {
       type: String,
@@ -43,6 +44,11 @@ const productSchema = new mongoose.Schema(
       type: mongoose.Types.ObjectId,
       ref: "User",
       required: [true, "Please provide user"],
+    },
+    stockCount: {
+      type: Number,
+      required: true,
+      default: 10,
     },
   },
   { timestamps: true }

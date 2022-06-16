@@ -26,12 +26,12 @@ const createProduct = async (req, res) => {
 
 const updateProduct = async (req, res) => {
   const {
-    body: { price, name },
+    body: { price, name, company, gender },
     params: { id: productID },
   } = req;
 
-  if (price === "" || name === "") {
-    throw new BadRequest("Must provide company or name");
+  if (price === "" || name === "" || company === "" || gender === "") {
+    throw new BadRequest("Must provide company, name, price, gender");
   }
 
   const product = await Product.findByIdAndUpdate(
