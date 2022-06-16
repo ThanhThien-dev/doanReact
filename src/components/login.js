@@ -10,6 +10,7 @@ function Login() {
   const [isClickDN, setIsClickDN] = useState(true);
   const [isClickDK, setIsClickDK] = useState(false);
   const [alert, setAlert] = useState("");
+  const [loginAlert, setLoginAlert] = useState("");
   const [registerInfo, setRegisterInfo] = useState({
     username: "",
     password: "",
@@ -57,6 +58,7 @@ function Login() {
       })
       .catch((err) => {
         console.log(err);
+        setLoginAlert(err.response.data.msg);
       });
   };
 
@@ -175,7 +177,16 @@ function Login() {
                     <input className="check" type="checkbox" name="remember" />{" "}
                     <span className="rmb">Ghi nhớ tài khoản</span>
                     <span className="forgot">Quên mật khẩu?</span>
-                    <p></p>
+                    <div
+                      style={{
+                        textAlign: "center",
+                        fontSize: "16px",
+                        color: "red",
+                        marginTop: "5px",
+                      }}
+                    >
+                      {loginAlert}
+                    </div>
                     <button className="Alert" type="submit" id="Alert">
                       ĐĂNG NHẬP
                     </button>

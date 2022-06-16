@@ -14,18 +14,18 @@ const login = async (req, res) => {
   console.log(req.body);
   const { username, password } = req.body;
   if (!username || !password) {
-    throw new BadRequest("Please provide email and password");
+    throw new BadRequest("Vui lòng cung cấp username và password");
   }
 
   const user = await User.findOne({ username });
 
   if (!user) {
-    throw new UnauthenticatedError("Invalid Username");
+    throw new UnauthenticatedError("Username không tồn tại");
   }
 
   const isPasswordCorrect = await user.comparePassword(password);
   if (!isPasswordCorrect) {
-    throw new UnauthenticatedError("Invalid Password");
+    throw new UnauthenticatedError("Password không tồn tại");
   }
 
   const token = user.createJWT();

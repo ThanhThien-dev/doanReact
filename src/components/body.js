@@ -104,7 +104,7 @@ function Body() {
             return (
               <div key={_id} className="product">
                 <div className="img-container">
-                  <img src={require(`./images/hot/${picture}`)} alt="" />
+                  <img src={`http://localhost:3000/images/${picture}`} alt="" />
                   <Link to={`/chitiet/${_id}`}>
                     <div className="addCart">
                       <FontAwesomeIcon icon={faShoppingCart} />

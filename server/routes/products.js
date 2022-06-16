@@ -20,7 +20,7 @@ router
   .post([authenticationMiddleware, authorizeRoles("admin")], createProduct);
 router
   .route("/:id")
-  .get([authenticationMiddleware, authorizeRoles("admin")], getProduct)
+  .get(getProduct)
   .delete([authenticationMiddleware, authorizeRoles("admin")], deleteProduct)
   .patch([authenticationMiddleware, authorizeRoles("admin")], updateProduct);
 

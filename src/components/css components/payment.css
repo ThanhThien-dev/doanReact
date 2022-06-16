@@ -97,6 +97,11 @@
     width: 100%;
     max-width: 35rem;
   }
+
+  .removefromcart-button{
+    color: red;
+    cursor: pointer;
+  }
   
   td:last-child {
     text-align: center;

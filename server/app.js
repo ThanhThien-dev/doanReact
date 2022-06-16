@@ -9,6 +9,7 @@ const connectDB = require("./db/connect");
 
 const productRouter = require("./routes/products");
 const login = require("./routes/auth");
+const upload = require("./routes/upload");
 
 const notFoundMiddleware = require("./middleware/not-found");
 const errorMiddleware = require("./middleware/error-handler");
@@ -18,6 +19,7 @@ app.use(cors());
 
 app.use("/api/v1/auth", login);
 app.use("/api/v1/products", productRouter);
+app.use("/api/v1/upload", upload);
 app.use("/images", express.static("./images"));
 
 app.use(notFoundMiddleware);

@@ -1,13 +1,27 @@
-function AccountItem() {
-    return(
-        <div className="wrapper-account">
-            <img className="avatar" src="http://mauweb.monamedia.net/rolex/wp-content/uploads/2018/11/12-480x480.jpg" alt="logo sp" />
-            <div className="info">
-                <h4 className="name">Rolex</h4>
-                <span className="price">23232</span>
-            </div>
+import { Link } from "react-router-dom";
+
+function AccountItem({ product, handleClick }) {
+  console.log(product);
+  const { _id, name, price, picture } = product;
+  return (
+    <Link
+      to={`/chitiet/${_id}`}
+      style={{ textDecoration: "none" }}
+      onClick={handleClick}
+    >
+      <div className="wrapper-account">
+        <img
+          className="avatar"
+          src={`http://localhost:3000/images/${picture}`}
+          alt=""
+        />
+        <div className="info">
+          <h4 className="name">{name}</h4>
+          <span className="price">{price}</span>
         </div>
-    );
+      </div>
+    </Link>
+  );
 }
 
 export default AccountItem;

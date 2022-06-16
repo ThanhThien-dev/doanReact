@@ -53,7 +53,7 @@ function ProductDetail({ match, history }) {
               <div className="contain">
                 <div className="main">
                   <img
-                    src={require(`./images/hot/${product.picture}`)}
+                    src={`http://localhost:3000/images/${product.picture}`}
                     alt=""
                   />
                 </div>

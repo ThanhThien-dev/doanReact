@@ -4,7 +4,7 @@ const { UnauthenticatedError } = require("../error");
 const authenticationMiddleware = async (req, res, next) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
-    throw new UnauthenticatedError("No token provided");
+    throw new UnauthenticatedError("Chưa cung cấp token");
   }
 
   const token = authHeader.split(" ")[1];
@@ -18,14 +18,14 @@ const authenticationMiddleware = async (req, res, next) => {
     };
     next();
   } catch (error) {
-    throw new UnauthenticatedError("Not authorized to access this route");
+    throw new UnauthenticatedError("Không có quyền truy cập");
   }
 };
 
 const authorizeRoles = (...roles) => {
   return (req, res, next) => {
     if (!roles.includes(req.user.role)) {
-      throw new UnauthenticatedError("Not authorized to access this route");
+      throw new UnauthenticatedError("Không có quyền truy cập");
     }
     next();
   };

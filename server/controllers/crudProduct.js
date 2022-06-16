@@ -12,7 +12,7 @@ const getProduct = async (req, res) => {
   });
 
   if (!product) {
-    throw new NotFoundError(`No product with id: ${productID}`);
+    throw new NotFoundError(`không có sẩn phẩm với id: ${productID}`);
   }
 
   res.status(StatusCodes.OK).json({ product });
@@ -31,7 +31,7 @@ const updateProduct = async (req, res) => {
   } = req;
 
   if (price === "" || name === "" || company === "" || gender === "") {
-    throw new BadRequest("Must provide company, name, price, gender");
+    throw new BadRequest("Cần phải cung cấp đầy đủ thông tin");
   }
 
   const product = await Product.findByIdAndUpdate(
@@ -44,7 +44,7 @@ const updateProduct = async (req, res) => {
   );
 
   if (!product) {
-    throw new NotFoundError(`No product with id: ${productID}`);
+    throw new NotFoundError(`không có sẩn phẩm với id: ${productID}`);
   }
 
   res.status(StatusCodes.OK).json({ product });
@@ -60,7 +60,7 @@ const deleteProduct = async (req, res) => {
   });
 
   if (!product) {
-    throw new NotFoundError(`No product with id: ${productID}`);
+    throw new NotFoundError(`không có sản phẩm với id: ${productID}`);
   }
 
   res.status(StatusCodes.OK).send();

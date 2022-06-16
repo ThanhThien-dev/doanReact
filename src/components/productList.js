@@ -78,7 +78,7 @@ function ProductList() {
                   name="gender"
                   onChange={(e) => {
                     if (e.target.checked) {
-                      setGender("gender=Nu");
+                      setGender("gender=Nữ");
                       setPage("page=1");
                     }
                   }}
@@ -110,9 +110,6 @@ function ProductList() {
                 />
                 <label for="">
                   <span className="brand-name">Casio</span>
-                  <span className="brand-box">
-                    <span className="box">7</span>
-                  </span>
                 </label>
               </li>
 
@@ -130,9 +127,6 @@ function ProductList() {
                 />
                 <label for="">
                   <span className="brand-name">Citizen</span>
-                  <span className="brand-box">
-                    <span className="box">3</span>
-                  </span>
                 </label>
               </li>
 
@@ -150,9 +144,6 @@ function ProductList() {
                 />
                 <label for="">
                   <span className="brand-name">Doxa</span>
-                  <span className="brand-box">
-                    <span className="box">2</span>
-                  </span>
                 </label>
               </li>
 
@@ -170,9 +161,6 @@ function ProductList() {
                 />
                 <label for="">
                   <span className="brand-name">Tissot</span>
-                  <span className="brand-box">
-                    <span className="box">2</span>
-                  </span>
                 </label>
               </li>
 
@@ -190,9 +178,6 @@ function ProductList() {
                 />
                 <label for="">
                   <span className="brand-name">Seiko</span>
-                  <span className="brand-box">
-                    <span className="box">1</span>
-                  </span>
                 </label>
               </li>
 
@@ -210,9 +195,6 @@ function ProductList() {
                 />
                 <label for="">
                   <span className="brand-name">Rolex</span>
-                  <span className="brand-box">
-                    <span className="box">0</span>
-                  </span>
                 </label>
               </li>
             </ul>
@@ -252,7 +234,6 @@ function ProductList() {
                 <option value="DESC">Giảm dần</option>
               </select>
             </div>
-            <a href="">Lọc</a>
           </form>
 
           {loading ? (
